@@ -1,0 +1,64 @@
+EDA Netlist Writer report for First_Niosii
+Sun Dec 01 17:56:30 2019
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. EDA Netlist Writer Summary
+  3. EDA Netlist Writer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++---------------------------------------------------------------+
+; EDA Netlist Writer Summary                                    ;
++---------------------------+-----------------------------------+
+; EDA Netlist Writer Status ; Failed - Sun Dec 01 17:56:30 2019 ;
+; Revision Name             ; First_Niosii                      ;
+; Top-level Entity Name     ; First_Niosii                      ;
+; Family                    ; Cyclone IV E                      ;
++---------------------------+-----------------------------------+
+
+
++-----------------------------+
+; EDA Netlist Writer Messages ;
++-----------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit EDA Netlist Writer
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Sun Dec 01 17:56:29 2019
+Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off First_Niosii -c First_Niosii
+Error (204012): Can't generate netlist output files because the file "C:/Users/damit/Desktop/FPGA_Deo_Nano/DE0-Nano_v.1.2.2_SystemCD/Demonstration/myfirst_niosii_2019/db/ip/De0_Nano_Qsys2019/submodules/De0_Nano_Qsys2019_cpu.v" is an OpenCore Plus time-limited file
+Error (204009): Can't generate netlist output files because the license for encrypted file "C:/Users/damit/Desktop/FPGA_Deo_Nano/DE0-Nano_v.1.2.2_SystemCD/Demonstration/myfirst_niosii_2019/db/ip/De0_Nano_Qsys2019/submodules/De0_Nano_Qsys2019_cpu.v" is not available
+Error (204012): Can't generate netlist output files because the file "C:/Users/damit/Desktop/FPGA_Deo_Nano/DE0-Nano_v.1.2.2_SystemCD/Demonstration/myfirst_niosii_2019/db/ip/De0_Nano_Qsys2019/submodules/De0_Nano_Qsys2019_cpu.v" is an OpenCore Plus time-limited file
+Error (204009): Can't generate netlist output files because the license for encrypted file "C:/Users/damit/Desktop/FPGA_Deo_Nano/DE0-Nano_v.1.2.2_SystemCD/Demonstration/myfirst_niosii_2019/db/ip/De0_Nano_Qsys2019/submodules/De0_Nano_Qsys2019_cpu.v" is not available
+Error (204012): Can't generate netlist output files because the file "C:/Users/damit/Desktop/FPGA_Deo_Nano/DE0-Nano_v.1.2.2_SystemCD/Demonstration/myfirst_niosii_2019/db/ip/De0_Nano_Qsys2019/submodules/De0_Nano_Qsys2019_cpu.v" is an OpenCore Plus time-limited file
+Error (204009): Can't generate netlist output files because the license for encrypted file "C:/Users/damit/Desktop/FPGA_Deo_Nano/DE0-Nano_v.1.2.2_SystemCD/Demonstration/myfirst_niosii_2019/db/ip/De0_Nano_Qsys2019/submodules/De0_Nano_Qsys2019_cpu.v" is not available
+Error: Quartus II 64-Bit EDA Netlist Writer was unsuccessful. 6 errors, 0 warnings
+    Error: Peak virtual memory: 4565 megabytes
+    Error: Processing ended: Sun Dec 01 17:56:31 2019
+    Error: Elapsed time: 00:00:02
+    Error: Total CPU time (on all processors): 00:00:01
+
+

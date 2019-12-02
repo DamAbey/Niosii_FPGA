@@ -1,0 +1,37 @@
+!SESSION 2019-12-02 18:59:42.223 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY org.eclipse.equinox.p2.reconciler.dropins 4 0 2019-12-02 18:59:42.937
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: The bundle "org.eclipse.equinox.p2.reconciler.dropins_1.1.100.v20110815-1419 [152]" could not be resolved. Reason: Missing Constraint: Require-Bundle: org.eclipse.equinox.p2.touchpoint.eclipse; bundle-version="1.0.0"
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.getResolverError(AbstractBundle.java:1327)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.getResolutionFailureException(AbstractBundle.java:1311)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:323)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.resume(AbstractBundle.java:389)
+	at org.eclipse.osgi.framework.internal.core.Framework.resumeBundle(Framework.java:1131)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:559)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:544)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.incFWSL(StartLevelManager.java:457)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(StartLevelManager.java:243)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.dispatchEvent(StartLevelManager.java:438)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.dispatchEvent(StartLevelManager.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.cdt.core 1 0 2019-12-02 19:00:47.841
+!MESSAGE Indexed 'Niosii_bsp' (78 sources, 57 headers) in 1.11 sec: 933 declarations; 2,266 references; 113 unresolved inclusions; 5 syntax errors; 195 unresolved names (5.75%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2019-12-02 19:00:51.075
+!MESSAGE Indexed 'Niosii' (1 sources, 13 headers) in 0.02 sec: 1 declarations; 1 references; 14 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-02 19:02:02.517
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x11010 --id=0x0 --timestamp=1575199139]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-02 19:02:05.199
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x11010 --id=0x0 --timestamp=1575199139 /cygdrive/c/Users/damit/Desktop/FPGA_Deo_Nano/DE0-Nano_v.1.2.2_SystemCD/Demonstration/Niosii_FPGA/Software/Niosii/Niosii.elf]
