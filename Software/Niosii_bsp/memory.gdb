@@ -3,7 +3,7 @@
 # Machine generated for CPU 'cpu' in SOPC Builder design 'De0_Nano_Qsys2019'
 # SOPC Builder design path: C:/Users/damit/Desktop/FPGA_Deo_Nano/DE0-Nano_v.1.2.2_SystemCD/Demonstration/Niosii_FPGA/De0_Nano_Qsys2019.sopcinfo
 #
-# Generated: Mon Dec 02 19:00:45 EST 2019
+# Generated: Mon Dec 02 21:08:12 EST 2019
 
 # DO NOT MODIFY THIS FILE
 #
@@ -46,5 +46,8 @@
 # The cache attribute is specified which improves GDB performance
 # by allowing GDB to cache memory contents on the host.
 
+# sdram
+memory 0x2000000 0x4000000 cache
+
 # onchip_memory2
-memory 0x8000 0x10000 cache
+memory 0x4008000 0x4010000 cache

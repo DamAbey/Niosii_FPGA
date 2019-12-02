@@ -2,8 +2,8 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>hal</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>Dec 2, 2019 7:00:44 PM</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1575273644080</BspGeneratedUnixTimeStamp>
+        <BspGeneratedTimeStamp>Dec 2, 2019 9:08:11 PM</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1575281291221</BspGeneratedUnixTimeStamp>
         <BspGeneratedLocation>C:\Users\damit\Desktop\FPGA_Deo_Nano\DE0-Nano_v.1.2.2_SystemCD\Demonstration\Niosii_FPGA\software\Niosii_bsp</BspGeneratedLocation>
         <BspSettingsFile>.\settings.bsp</BspSettingsFile>
         <SopcDesignFile>C:\Users\damit\Desktop\FPGA_Deo_Nano\DE0-Nano_v.1.2.2_SystemCD\Demonstration\Niosii_FPGA\De0_Nano_Qsys2019.sopcinfo</SopcDesignFile>
@@ -146,7 +146,7 @@
                 <SettingName>hal.linker.exception_stack_memory_region_name</SettingName>
                 <Identifier>NONE</Identifier>
                 <Type>UnquotedString</Type>
-                <Value>onchip_memory2</Value>
+                <Value>sdram</Value>
                 <DefaultValue>none</DefaultValue>
                 <DestinationFile>none</DestinationFile>
                 <Description>Name of the existing memory region that will be divided up to create the 'exception_stack' memory region. The selected region name will be adjusted automatically when the BSP is generated to create the 'exception_stack' memory region.</Description>
@@ -182,7 +182,7 @@
                 <SettingName>hal.linker.interrupt_stack_memory_region_name</SettingName>
                 <Identifier>NONE</Identifier>
                 <Type>UnquotedString</Type>
-                <Value>onchip_memory2</Value>
+                <Value>sdram</Value>
                 <DefaultValue>none</DefaultValue>
                 <DestinationFile>none</DestinationFile>
                 <Description>Name of the existing memory region that will be divided up to create the 'interrupt_stack' memory region. The selected region name will be adjusted automatically when the BSP is generated to create the 'interrupt_stack' memory region.</Description>
@@ -863,51 +863,57 @@
                 <Group xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
         </Setting>
         <MemoryMap>
+                <slaveDescriptor>sdram</slaveDescriptor>
+                <addressRange>0x02000000 - 0x03FFFFFF</addressRange>
+                <addressSpan>33554432</addressSpan>
+                <attributes>memory</attributes>
+        </MemoryMap>
+        <MemoryMap>
                 <slaveDescriptor>onchip_memory2</slaveDescriptor>
-                <addressRange>0x00008000 - 0x0000FFFF</addressRange>
+                <addressRange>0x04008000 - 0x0400FFFF</addressRange>
                 <addressSpan>32768</addressSpan>
                 <attributes>memory</attributes>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>pio_led</slaveDescriptor>
-                <addressRange>0x00011000 - 0x0001100F</addressRange>
+                <addressRange>0x04011000 - 0x0401100F</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>sysid</slaveDescriptor>
-                <addressRange>0x00011010 - 0x00011017</addressRange>
+                <addressRange>0x04011010 - 0x04011017</addressRange>
                 <addressSpan>8</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>jtag_uart</slaveDescriptor>
-                <addressRange>0x00011018 - 0x0001101F</addressRange>
+                <addressRange>0x04011018 - 0x0401101F</addressRange>
                 <addressSpan>8</addressSpan>
                 <attributes>printable</attributes>
         </MemoryMap>
         <LinkerSection>
                 <sectionName>.text</sectionName>
-                <regionName>onchip_memory2</regionName>
+                <regionName>sdram</regionName>
         </LinkerSection>
         <LinkerSection>
                 <sectionName>.rodata</sectionName>
-                <regionName>onchip_memory2</regionName>
+                <regionName>sdram</regionName>
         </LinkerSection>
         <LinkerSection>
                 <sectionName>.rwdata</sectionName>
-                <regionName>onchip_memory2</regionName>
+                <regionName>sdram</regionName>
         </LinkerSection>
         <LinkerSection>
                 <sectionName>.bss</sectionName>
-                <regionName>onchip_memory2</regionName>
+                <regionName>sdram</regionName>
         </LinkerSection>
         <LinkerSection>
                 <sectionName>.heap</sectionName>
-                <regionName>onchip_memory2</regionName>
+                <regionName>sdram</regionName>
         </LinkerSection>
         <LinkerSection>
                 <sectionName>.stack</sectionName>
-                <regionName>onchip_memory2</regionName>
+                <regionName>sdram</regionName>
         </LinkerSection>
 </sch:Settings>

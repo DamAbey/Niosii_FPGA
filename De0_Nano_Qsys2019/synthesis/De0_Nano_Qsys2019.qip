@@ -2,17 +2,20 @@ set_global_assignment -entity "De0_Nano_Qsys2019" -library "De0_Nano_Qsys2019" -
 set_global_assignment -entity "De0_Nano_Qsys2019" -library "De0_Nano_Qsys2019" -name IP_TOOL_VERSION "13.0sp1"
 set_global_assignment -entity "De0_Nano_Qsys2019" -library "De0_Nano_Qsys2019" -name IP_TOOL_ENV "Qsys"
 set_global_assignment -library "De0_Nano_Qsys2019" -name SOPCINFO_FILE [file join $::quartus(qip_path) "../../De0_Nano_Qsys2019.sopcinfo"]
-set_instance_assignment -entity "De0_Nano_Qsys2019" -library "De0_Nano_Qsys2019" -name SLD_INFO "QSYS_NAME De0_Nano_Qsys2019 HAS_SOPCINFO 1 GENERATION_ID 1575193418"
+set_instance_assignment -entity "De0_Nano_Qsys2019" -library "De0_Nano_Qsys2019" -name SLD_INFO "QSYS_NAME De0_Nano_Qsys2019 HAS_SOPCINFO 1 GENERATION_ID 1575277317"
 set_global_assignment -library "De0_Nano_Qsys2019" -name MISC_FILE [file join $::quartus(qip_path) "../../De0_Nano_Qsys2019.cmp"]
 set_global_assignment -name SYNTHESIS_ONLY_QIP ON
 set_global_assignment -library "De0_Nano_Qsys2019" -name MISC_FILE [file join $::quartus(qip_path) "../../De0_Nano_Qsys2019.qsys"]
 
 set_global_assignment -library "De0_Nano_Qsys2019" -name VERILOG_FILE [file join $::quartus(qip_path) "De0_Nano_Qsys2019.v"]
 set_global_assignment -library "De0_Nano_Qsys2019" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/De0_Nano_Qsys2019_irq_mapper.sv"]
+set_global_assignment -library "De0_Nano_Qsys2019" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_width_adapter.sv"]
+set_global_assignment -library "De0_Nano_Qsys2019" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_address_alignment.sv"]
+set_global_assignment -library "De0_Nano_Qsys2019" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_burst_uncompressor.sv"]
 set_global_assignment -library "De0_Nano_Qsys2019" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_arbitrator.sv"]
 set_global_assignment -library "De0_Nano_Qsys2019" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/De0_Nano_Qsys2019_rsp_xbar_mux_001.sv"]
 set_global_assignment -library "De0_Nano_Qsys2019" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/De0_Nano_Qsys2019_rsp_xbar_mux.sv"]
-set_global_assignment -library "De0_Nano_Qsys2019" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/De0_Nano_Qsys2019_rsp_xbar_demux_002.sv"]
+set_global_assignment -library "De0_Nano_Qsys2019" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/De0_Nano_Qsys2019_rsp_xbar_demux_003.sv"]
 set_global_assignment -library "De0_Nano_Qsys2019" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/De0_Nano_Qsys2019_rsp_xbar_demux.sv"]
 set_global_assignment -library "De0_Nano_Qsys2019" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/De0_Nano_Qsys2019_cmd_xbar_mux.sv"]
 set_global_assignment -library "De0_Nano_Qsys2019" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/De0_Nano_Qsys2019_cmd_xbar_demux_001.sv"]
@@ -20,18 +23,20 @@ set_global_assignment -library "De0_Nano_Qsys2019" -name SYSTEMVERILOG_FILE [fil
 set_global_assignment -library "De0_Nano_Qsys2019" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_reset_controller.v"]
 set_global_assignment -library "De0_Nano_Qsys2019" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_reset_synchronizer.v"]
 set_global_assignment -library "De0_Nano_Qsys2019" -name SDC_FILE [file join $::quartus(qip_path) "submodules/altera_reset_controller.sdc"]
+set_global_assignment -library "De0_Nano_Qsys2019" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_burst_adapter.sv"]
 set_global_assignment -library "De0_Nano_Qsys2019" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_traffic_limiter.sv"]
 set_global_assignment -library "De0_Nano_Qsys2019" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_avalon_st_pipeline_base.v"]
+set_global_assignment -library "De0_Nano_Qsys2019" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/De0_Nano_Qsys2019_id_router_003.sv"]
 set_global_assignment -library "De0_Nano_Qsys2019" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/De0_Nano_Qsys2019_id_router_002.sv"]
 set_global_assignment -library "De0_Nano_Qsys2019" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/De0_Nano_Qsys2019_id_router.sv"]
 set_global_assignment -library "De0_Nano_Qsys2019" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/De0_Nano_Qsys2019_addr_router_001.sv"]
 set_global_assignment -library "De0_Nano_Qsys2019" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/De0_Nano_Qsys2019_addr_router.sv"]
 set_global_assignment -library "De0_Nano_Qsys2019" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_avalon_sc_fifo.v"]
 set_global_assignment -library "De0_Nano_Qsys2019" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_slave_agent.sv"]
-set_global_assignment -library "De0_Nano_Qsys2019" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_burst_uncompressor.sv"]
 set_global_assignment -library "De0_Nano_Qsys2019" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_master_agent.sv"]
 set_global_assignment -library "De0_Nano_Qsys2019" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_slave_translator.sv"]
 set_global_assignment -library "De0_Nano_Qsys2019" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_master_translator.sv"]
+set_global_assignment -library "De0_Nano_Qsys2019" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/De0_Nano_Qsys2019_sdram.v"]
 set_global_assignment -library "De0_Nano_Qsys2019" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/De0_Nano_Qsys2019_pio_led.v"]
 set_global_assignment -library "De0_Nano_Qsys2019" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/De0_Nano_Qsys2019_sysid.v"]
 set_global_assignment -library "De0_Nano_Qsys2019" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/De0_Nano_Qsys2019_onchip_memory2.hex"]
@@ -56,15 +61,18 @@ set_global_assignment -library "De0_Nano_Qsys2019" -name VERILOG_FILE [file join
 set_global_assignment -entity "De0_Nano_Qsys2019_irq_mapper" -library "De0_Nano_Qsys2019" -name IP_TOOL_NAME "altera_irq_mapper"
 set_global_assignment -entity "De0_Nano_Qsys2019_irq_mapper" -library "De0_Nano_Qsys2019" -name IP_TOOL_VERSION "13.0"
 set_global_assignment -entity "De0_Nano_Qsys2019_irq_mapper" -library "De0_Nano_Qsys2019" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "altera_merlin_width_adapter" -library "De0_Nano_Qsys2019" -name IP_TOOL_NAME "altera_merlin_width_adapter"
+set_global_assignment -entity "altera_merlin_width_adapter" -library "De0_Nano_Qsys2019" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "altera_merlin_width_adapter" -library "De0_Nano_Qsys2019" -name IP_TOOL_ENV "Qsys"
 set_global_assignment -entity "De0_Nano_Qsys2019_rsp_xbar_mux_001" -library "De0_Nano_Qsys2019" -name IP_TOOL_NAME "altera_merlin_multiplexer"
 set_global_assignment -entity "De0_Nano_Qsys2019_rsp_xbar_mux_001" -library "De0_Nano_Qsys2019" -name IP_TOOL_VERSION "13.0"
 set_global_assignment -entity "De0_Nano_Qsys2019_rsp_xbar_mux_001" -library "De0_Nano_Qsys2019" -name IP_TOOL_ENV "Qsys"
 set_global_assignment -entity "De0_Nano_Qsys2019_rsp_xbar_mux" -library "De0_Nano_Qsys2019" -name IP_TOOL_NAME "altera_merlin_multiplexer"
 set_global_assignment -entity "De0_Nano_Qsys2019_rsp_xbar_mux" -library "De0_Nano_Qsys2019" -name IP_TOOL_VERSION "13.0"
 set_global_assignment -entity "De0_Nano_Qsys2019_rsp_xbar_mux" -library "De0_Nano_Qsys2019" -name IP_TOOL_ENV "Qsys"
-set_global_assignment -entity "De0_Nano_Qsys2019_rsp_xbar_demux_002" -library "De0_Nano_Qsys2019" -name IP_TOOL_NAME "altera_merlin_demultiplexer"
-set_global_assignment -entity "De0_Nano_Qsys2019_rsp_xbar_demux_002" -library "De0_Nano_Qsys2019" -name IP_TOOL_VERSION "13.0"
-set_global_assignment -entity "De0_Nano_Qsys2019_rsp_xbar_demux_002" -library "De0_Nano_Qsys2019" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "De0_Nano_Qsys2019_rsp_xbar_demux_003" -library "De0_Nano_Qsys2019" -name IP_TOOL_NAME "altera_merlin_demultiplexer"
+set_global_assignment -entity "De0_Nano_Qsys2019_rsp_xbar_demux_003" -library "De0_Nano_Qsys2019" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "De0_Nano_Qsys2019_rsp_xbar_demux_003" -library "De0_Nano_Qsys2019" -name IP_TOOL_ENV "Qsys"
 set_global_assignment -entity "De0_Nano_Qsys2019_rsp_xbar_demux" -library "De0_Nano_Qsys2019" -name IP_TOOL_NAME "altera_merlin_demultiplexer"
 set_global_assignment -entity "De0_Nano_Qsys2019_rsp_xbar_demux" -library "De0_Nano_Qsys2019" -name IP_TOOL_VERSION "13.0"
 set_global_assignment -entity "De0_Nano_Qsys2019_rsp_xbar_demux" -library "De0_Nano_Qsys2019" -name IP_TOOL_ENV "Qsys"
@@ -80,9 +88,15 @@ set_global_assignment -entity "De0_Nano_Qsys2019_cmd_xbar_demux" -library "De0_N
 set_global_assignment -entity "altera_reset_controller" -library "De0_Nano_Qsys2019" -name IP_TOOL_NAME "altera_reset_controller"
 set_global_assignment -entity "altera_reset_controller" -library "De0_Nano_Qsys2019" -name IP_TOOL_VERSION "13.0"
 set_global_assignment -entity "altera_reset_controller" -library "De0_Nano_Qsys2019" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "altera_merlin_burst_adapter" -library "De0_Nano_Qsys2019" -name IP_TOOL_NAME "altera_merlin_burst_adapter"
+set_global_assignment -entity "altera_merlin_burst_adapter" -library "De0_Nano_Qsys2019" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "altera_merlin_burst_adapter" -library "De0_Nano_Qsys2019" -name IP_TOOL_ENV "Qsys"
 set_global_assignment -entity "altera_merlin_traffic_limiter" -library "De0_Nano_Qsys2019" -name IP_TOOL_NAME "altera_merlin_traffic_limiter"
 set_global_assignment -entity "altera_merlin_traffic_limiter" -library "De0_Nano_Qsys2019" -name IP_TOOL_VERSION "13.0"
 set_global_assignment -entity "altera_merlin_traffic_limiter" -library "De0_Nano_Qsys2019" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "De0_Nano_Qsys2019_id_router_003" -library "De0_Nano_Qsys2019" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "De0_Nano_Qsys2019_id_router_003" -library "De0_Nano_Qsys2019" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "De0_Nano_Qsys2019_id_router_003" -library "De0_Nano_Qsys2019" -name IP_TOOL_ENV "Qsys"
 set_global_assignment -entity "De0_Nano_Qsys2019_id_router_002" -library "De0_Nano_Qsys2019" -name IP_TOOL_NAME "altera_merlin_router"
 set_global_assignment -entity "De0_Nano_Qsys2019_id_router_002" -library "De0_Nano_Qsys2019" -name IP_TOOL_VERSION "13.0"
 set_global_assignment -entity "De0_Nano_Qsys2019_id_router_002" -library "De0_Nano_Qsys2019" -name IP_TOOL_ENV "Qsys"
@@ -110,6 +124,9 @@ set_global_assignment -entity "altera_merlin_slave_translator" -library "De0_Nan
 set_global_assignment -entity "altera_merlin_master_translator" -library "De0_Nano_Qsys2019" -name IP_TOOL_NAME "altera_merlin_master_translator"
 set_global_assignment -entity "altera_merlin_master_translator" -library "De0_Nano_Qsys2019" -name IP_TOOL_VERSION "13.0"
 set_global_assignment -entity "altera_merlin_master_translator" -library "De0_Nano_Qsys2019" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "De0_Nano_Qsys2019_sdram" -library "De0_Nano_Qsys2019" -name IP_TOOL_NAME "altera_avalon_new_sdram_controller"
+set_global_assignment -entity "De0_Nano_Qsys2019_sdram" -library "De0_Nano_Qsys2019" -name IP_TOOL_VERSION "13.0.1.99.2"
+set_global_assignment -entity "De0_Nano_Qsys2019_sdram" -library "De0_Nano_Qsys2019" -name IP_TOOL_ENV "Qsys"
 set_global_assignment -entity "De0_Nano_Qsys2019_pio_led" -library "De0_Nano_Qsys2019" -name IP_TOOL_NAME "altera_avalon_pio"
 set_global_assignment -entity "De0_Nano_Qsys2019_pio_led" -library "De0_Nano_Qsys2019" -name IP_TOOL_VERSION "13.0.1.99.2"
 set_global_assignment -entity "De0_Nano_Qsys2019_pio_led" -library "De0_Nano_Qsys2019" -name IP_TOOL_ENV "Qsys"
