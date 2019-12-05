@@ -15,6 +15,7 @@
   </columns>
  </clocktable>
  <library
-   expandedCategories="Library,Library/Memories and Memory Controllers/External Memory Interfaces/SDRAM Interfaces,Library/Memories and Memory Controllers/External Memory Interfaces,Library/Memories and Memory Controllers,Project" />
+   expandedCategories="Library/University Program,Library/University Program/Communications,Library,Library/Interface Protocols/Serial,Library/Interface Protocols,Project" />
  <window width="1598" height="980" x="0" y="0" />
+ <hdlexample language="VERILOG" />
 </preferences>

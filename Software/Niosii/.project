@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>Niosii</name>
+	<name>NIOSII</name>
 	<comment></comment>
 	<projects>
 	</projects>
@@ -41,7 +41,7 @@
 				</dictionary>
 				<dictionary>
 					<key>org.eclipse.cdt.make.core.buildLocation</key>
-					<value>${workspace_loc://Niosii}</value>
+					<value>${workspace_loc://NIOSII}</value>
 				</dictionary>
 				<dictionary>
 					<key>org.eclipse.cdt.make.core.cleanBuildTarget</key>

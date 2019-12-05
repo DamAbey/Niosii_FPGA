@@ -4,7 +4,7 @@
  * Machine generated for CPU 'cpu' in SOPC Builder design 'De0_Nano_Qsys2019'
  * SOPC Builder design path: C:/Users/damit/Desktop/FPGA_Deo_Nano/DE0-Nano_v.1.2.2_SystemCD/Demonstration/Niosii_FPGA/De0_Nano_Qsys2019.sopcinfo
  *
- * Generated: Mon Dec 02 21:08:12 EST 2019
+ * Generated: Thu Dec 05 21:11:25 EST 2019
  */
 
 /*
@@ -61,6 +61,7 @@
 #include "altera_nios2_qsys_irq.h"
 #include "altera_avalon_jtag_uart.h"
 #include "altera_avalon_sysid_qsys.h"
+#include "altera_avalon_uart.h"
 
 /*
  * Allocate the device storage
@@ -69,6 +70,7 @@
 ALTERA_NIOS2_QSYS_IRQ_INSTANCE ( CPU, cpu);
 ALTERA_AVALON_JTAG_UART_INSTANCE ( JTAG_UART, jtag_uart);
 ALTERA_AVALON_SYSID_QSYS_INSTANCE ( SYSID, sysid);
+ALTERA_AVALON_UART_INSTANCE ( UART_0, uart_0);
 
 /*
  * Initialize the interrupt controller devices
@@ -93,4 +95,5 @@ void alt_sys_init( void )
 {
     ALTERA_AVALON_JTAG_UART_INIT ( JTAG_UART, jtag_uart);
     ALTERA_AVALON_SYSID_QSYS_INIT ( SYSID, sysid);
+    ALTERA_AVALON_UART_INIT ( UART_0, uart_0);
 }

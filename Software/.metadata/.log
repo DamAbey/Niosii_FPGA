@@ -1,4 +1,4 @@
-!SESSION 2019-12-02 21:06:59.817 -----------------------------------------------
+!SESSION 2019-12-05 21:10:32.649 -----------------------------------------------
 eclipse.buildId=M20120208-0800
 java.version=1.6.0_23
 java.vendor=Sun Microsystems Inc.
@@ -6,7 +6,7 @@ BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
 Framework arguments:  -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
 Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
 
-!ENTRY org.eclipse.equinox.p2.reconciler.dropins 4 0 2019-12-02 21:07:01.487
+!ENTRY org.eclipse.equinox.p2.reconciler.dropins 4 0 2019-12-05 21:10:33.355
 !MESSAGE FrameworkEvent ERROR
 !STACK 0
 org.osgi.framework.BundleException: The bundle "org.eclipse.equinox.p2.reconciler.dropins_1.1.100.v20110815-1419 [152]" could not be resolved. Reason: Missing Constraint: Require-Bundle: org.eclipse.equinox.p2.touchpoint.eclipse; bundle-version="1.0.0"
@@ -24,23 +24,23 @@ org.osgi.framework.BundleException: The bundle "org.eclipse.equinox.p2.reconcile
 	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
 	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
 
-!ENTRY org.eclipse.cdt.core 1 0 2019-12-02 21:08:15.577
-!MESSAGE Indexed 'Niosii_bsp' (78 sources, 57 headers) in 1.02 sec: 933 declarations; 2,266 references; 113 unresolved inclusions; 5 syntax errors; 195 unresolved names (5.75%)
+!ENTRY org.eclipse.cdt.core 1 0 2019-12-05 21:11:28.396
+!MESSAGE Indexed 'NIOSII_bsp' (83 sources, 61 headers) in 1.33 sec: 1,057 declarations; 2,748 references; 119 unresolved inclusions; 5 syntax errors; 219 unresolved names (5.44%)
 
-!ENTRY org.eclipse.cdt.core 1 0 2019-12-02 21:08:20.623
-!MESSAGE Indexed 'Niosii' (1 sources, 13 headers) in 0.04 sec: 1 declarations; 1 references; 14 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+!ENTRY org.eclipse.cdt.core 1 0 2019-12-05 21:11:33.631
+!MESSAGE Indexed 'NIOSII' (1 sources, 13 headers) in 0.02 sec: 1 declarations; 1 references; 14 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
 
-!ENTRY com.altera.sbtgui.launch 1 0 2019-12-02 21:09:42.256
-!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x4011010 --id=0x0 --timestamp=1575281018]
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-05 21:13:07.792
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x4011030 --id=0x0 --timestamp=1575540367]
 
-!ENTRY com.altera.sbtgui.launch 1 0 2019-12-02 21:09:44.830
-!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x4011010 --id=0x0 --timestamp=1575281018 /cygdrive/c/Users/damit/Desktop/FPGA_Deo_Nano/DE0-Nano_v.1.2.2_SystemCD/Demonstration/Niosii_FPGA/Software/Niosii/Niosii.elf]
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-05 21:13:10.363
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x4011030 --id=0x0 --timestamp=1575540367 /cygdrive/c/Users/damit/Desktop/FPGA_Deo_Nano/DE0-Nano_v.1.2.2_SystemCD/Demonstration/Niosii_FPGA/Software/NIOSII/NIOSII.elf]
 
-!ENTRY com.altera.sbtgui.launch 1 0 2019-12-02 21:22:49.669
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-05 21:55:58.081
 !MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
 
-!ENTRY com.altera.sbtgui.launch 1 0 2019-12-02 21:22:50.306
-!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x4011010 --id=0x0 --timestamp=1575281018]
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-05 21:55:58.728
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x4011030 --id=0x0 --timestamp=1575540367]
 
-!ENTRY com.altera.sbtgui.launch 1 0 2019-12-02 21:22:52.926
-!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x4011010 --id=0x0 --timestamp=1575281018 /cygdrive/c/Users/damit/Desktop/FPGA_Deo_Nano/DE0-Nano_v.1.2.2_SystemCD/Demonstration/Niosii_FPGA/Software/Niosii/Niosii.elf]
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-05 21:56:01.369
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x4011030 --id=0x0 --timestamp=1575540367 /cygdrive/c/Users/damit/Desktop/FPGA_Deo_Nano/DE0-Nano_v.1.2.2_SystemCD/Demonstration/Niosii_FPGA/Software/NIOSII/NIOSII.elf]

@@ -2,9 +2,9 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>hal</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>Dec 2, 2019 9:08:11 PM</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1575281291221</BspGeneratedUnixTimeStamp>
-        <BspGeneratedLocation>C:\Users\damit\Desktop\FPGA_Deo_Nano\DE0-Nano_v.1.2.2_SystemCD\Demonstration\Niosii_FPGA\software\Niosii_bsp</BspGeneratedLocation>
+        <BspGeneratedTimeStamp>Dec 5, 2019 9:11:23 PM</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1575540683853</BspGeneratedUnixTimeStamp>
+        <BspGeneratedLocation>C:\Users\damit\Desktop\FPGA_Deo_Nano\DE0-Nano_v.1.2.2_SystemCD\Demonstration\Niosii_FPGA\software\NIOSII_bsp</BspGeneratedLocation>
         <BspSettingsFile>.\settings.bsp</BspSettingsFile>
         <SopcDesignFile>C:\Users\damit\Desktop\FPGA_Deo_Nano\DE0-Nano_v.1.2.2_SystemCD\Demonstration\Niosii_FPGA\De0_Nano_Qsys2019.sopcinfo</SopcDesignFile>
         <JdiFile>default</JdiFile>
@@ -839,6 +839,30 @@
                 <Group>none</Group>
         </Setting>
         <Setting>
+                <SettingName>altera_avalon_uart_driver.enable_small_driver</SettingName>
+                <Identifier>ALTERA_AVALON_UART_SMALL</Identifier>
+                <Type>BooleanDefineOnly</Type>
+                <Value>false</Value>
+                <DefaultValue>false</DefaultValue>
+                <DestinationFile>public_mk_define</DestinationFile>
+                <Description>Small-footprint (polled mode) driver</Description>
+                <Restrictions>none</Restrictions>
+                <Enabled>false</Enabled>
+                <Group xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        </Setting>
+        <Setting>
+                <SettingName>altera_avalon_uart_driver.enable_ioctl</SettingName>
+                <Identifier>ALTERA_AVALON_UART_USE_IOCTL</Identifier>
+                <Type>BooleanDefineOnly</Type>
+                <Value>false</Value>
+                <DefaultValue>false</DefaultValue>
+                <DestinationFile>public_mk_define</DestinationFile>
+                <Description>Enable driver ioctl() support. This feature is not compatible with the 'small' driver; ioctl() support will not be compiled if either the UART 'enable_small_driver' or HAL 'enable_reduced_device_drivers' settings are enabled.</Description>
+                <Restrictions>none</Restrictions>
+                <Enabled>false</Enabled>
+                <Group xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        </Setting>
+        <Setting>
                 <SettingName>altera_avalon_jtag_uart_driver.enable_small_driver</SettingName>
                 <Identifier>ALTERA_AVALON_JTAG_UART_SMALL</Identifier>
                 <Type>BooleanDefineOnly</Type>
@@ -875,20 +899,26 @@
                 <attributes>memory</attributes>
         </MemoryMap>
         <MemoryMap>
+                <slaveDescriptor>uart_0</slaveDescriptor>
+                <addressRange>0x04011000 - 0x0401101F</addressRange>
+                <addressSpan>32</addressSpan>
+                <attributes>printable</attributes>
+        </MemoryMap>
+        <MemoryMap>
                 <slaveDescriptor>pio_led</slaveDescriptor>
-                <addressRange>0x04011000 - 0x0401100F</addressRange>
+                <addressRange>0x04011020 - 0x0401102F</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>sysid</slaveDescriptor>
-                <addressRange>0x04011010 - 0x04011017</addressRange>
+                <addressRange>0x04011030 - 0x04011037</addressRange>
                 <addressSpan>8</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>jtag_uart</slaveDescriptor>
-                <addressRange>0x04011018 - 0x0401101F</addressRange>
+                <addressRange>0x04011038 - 0x0401103F</addressRange>
                 <addressSpan>8</addressSpan>
                 <attributes>printable</attributes>
         </MemoryMap>

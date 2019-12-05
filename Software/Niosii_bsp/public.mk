@@ -147,14 +147,14 @@ SOPC_SYSID_FLAG += --id=0
 ELF_PATCH_FLAG  += --id 0
 
 # The SOPC System ID Base Address 
-# setting SOPC_SYSID_BASE_ADDRESS is 0x4011010
-SOPC_SYSID_FLAG += --sidp=0x4011010
-ELF_PATCH_FLAG  += --sidp 0x4011010
+# setting SOPC_SYSID_BASE_ADDRESS is 0x4011030
+SOPC_SYSID_FLAG += --sidp=0x4011030
+ELF_PATCH_FLAG  += --sidp 0x4011030
 
 # The SOPC Timestamp 
-# setting SOPC_TIMESTAMP is 1575281018
-SOPC_SYSID_FLAG += --timestamp=1575281018
-ELF_PATCH_FLAG  += --timestamp 1575281018
+# setting SOPC_TIMESTAMP is 1575540367
+SOPC_SYSID_FLAG += --timestamp=1575540367
+ELF_PATCH_FLAG  += --timestamp 1575540367
 
 # Enable JTAG UART driver to recover when host is inactive causing buffer to 
 # full without returning error. Printf will not fail with this recovery. none 
@@ -162,6 +162,15 @@ ELF_PATCH_FLAG  += --timestamp 1575281018
 
 # Small-footprint (polled mode) driver none 
 # setting altera_avalon_jtag_uart_driver.enable_small_driver is false
+
+# Enable driver ioctl() support. This feature is not compatible with the 
+# 'small' driver; ioctl() support will not be compiled if either the UART 
+# 'enable_small_driver' or HAL 'enable_reduced_device_drivers' settings are 
+# enabled. none 
+# setting altera_avalon_uart_driver.enable_ioctl is false
+
+# Small-footprint (polled mode) driver none 
+# setting altera_avalon_uart_driver.enable_small_driver is false
 
 # Build a custom version of newlib with the specified space-separated compiler 
 # flags. The custom newlib build will be placed in the &lt;bsp root>/newlib 

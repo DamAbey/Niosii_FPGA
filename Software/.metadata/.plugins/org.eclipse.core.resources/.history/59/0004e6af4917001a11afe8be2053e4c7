@@ -78,14 +78,16 @@
  *
  */
 
-#include "sys/alt_stdio.h"
+//#include "sys/alt_stdio.h"
+#include "stdio.h"
 #include "system.h"
 #include "altera_avalon_pio_regs.h"
 #include <time.h>
 #include <unistd.h>
 int main()
 {
-    alt_putstr("Hi, Hello from Nios II!\n");
+    //alt_putstr("Hi, Hello from Nios II!\n");
+	printf("Hi Damith");
     int count = 0;
     int delay;
     while(1)

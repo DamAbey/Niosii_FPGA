@@ -82,6 +82,7 @@
 #include "stdio.h"
 #include "system.h"
 #include "altera_avalon_pio_regs.h"
+#include "altera_avalon_uart_regs.h"
 #include <time.h>
 #include <unistd.h>
 int main()
@@ -93,6 +94,8 @@ int main()
     while(1)
     {
         IOWR_ALTERA_AVALON_PIO_DATA(PIO_LED_BASE, count);
+        IOWR_ALTERA_AVALON_UART_TXDATA(UART_0_BASE, 'A');
+
     	//count= IORD_ALTERA_AVALON_PIO_DATA(PIO_LED_BASE);
         delay = 0;
         usleep(100000);

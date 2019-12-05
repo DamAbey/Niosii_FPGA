@@ -8,7 +8,8 @@ obj/alt_sys_init.o: alt_sys_init.c system.h linker.h \
   drivers/inc/altera_avalon_jtag_uart_fd.h HAL/inc/sys/alt_dev.h \
   HAL/inc/sys/alt_llist.h HAL/inc/priv/alt_dev_llist.h \
   HAL/inc/sys/alt_llist.h drivers/inc/altera_avalon_sysid_qsys.h \
-  HAL/inc/alt_types.h
+  HAL/inc/alt_types.h drivers/inc/altera_avalon_uart.h \
+  HAL/inc/sys/termios.h drivers/inc/altera_avalon_uart_fd.h
 
 system.h:
 
@@ -57,3 +58,9 @@ HAL/inc/sys/alt_llist.h:
 drivers/inc/altera_avalon_sysid_qsys.h:
 
 HAL/inc/alt_types.h:
+
+drivers/inc/altera_avalon_uart.h:
+
+HAL/inc/sys/termios.h:
+
+drivers/inc/altera_avalon_uart_fd.h:

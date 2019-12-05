@@ -2,11 +2,11 @@
 <?scdStore version="2"?>
 
 <scannerInfo id="org.eclipse.cdt.make.core.discoveredScannerInfo">
-<instance id="preference.org.eclipse.cdt.managedbuilder.core.configurationDataProvider.1630836687;preference.org.eclipse.cdt.managedbuilder.core.configurationDataProvider.1630836687.;cdt.managedbuild.tool.gnu.cpp.compiler.cygwin.base.1429359798;cdt.managedbuild.tool.gnu.cpp.compiler.input.cygwin.1451482089">
+<instance id="preference.org.eclipse.cdt.managedbuilder.core.configurationDataProvider.465849544;preference.org.eclipse.cdt.managedbuilder.core.configurationDataProvider.465849544.;cdt.managedbuild.tool.gnu.cpp.compiler.cygwin.base.1838707555;cdt.managedbuild.tool.gnu.cpp.compiler.input.cygwin.1706147066">
 <collector id="org.eclipse.cdt.make.core.PerProjectSICollector">
-<includePath path="C:/Users/damit/Desktop/FPGA_Deo_Nano/DE0-Nano_v.1.2.2_SystemCD/Demonstration/Niosii_FPGA/Software/Niosii_bsp/HAL/inc"/>
-<includePath path="C:/Users/damit/Desktop/FPGA_Deo_Nano/DE0-Nano_v.1.2.2_SystemCD/Demonstration/Niosii_FPGA/Software/Niosii_bsp/"/>
-<includePath path="C:/Users/damit/Desktop/FPGA_Deo_Nano/DE0-Nano_v.1.2.2_SystemCD/Demonstration/Niosii_FPGA/Software/Niosii_bsp/drivers/inc"/>
+<includePath path="C:/Users/damit/Desktop/FPGA_Deo_Nano/DE0-Nano_v.1.2.2_SystemCD/Demonstration/Niosii_FPGA/Software/NIOSII_bsp/HAL/inc"/>
+<includePath path="C:/Users/damit/Desktop/FPGA_Deo_Nano/DE0-Nano_v.1.2.2_SystemCD/Demonstration/Niosii_FPGA/Software/NIOSII_bsp/"/>
+<includePath path="C:/Users/damit/Desktop/FPGA_Deo_Nano/DE0-Nano_v.1.2.2_SystemCD/Demonstration/Niosii_FPGA/Software/NIOSII_bsp/drivers/inc"/>
 <includePath path="C:\altera\13.0sp1\quartus\bin\cygwin\lib\gcc\i686-pc-cygwin\4.5.3\include\c++"/>
 <includePath path="C:\altera\13.0sp1\quartus\bin\cygwin\lib\gcc\i686-pc-cygwin\4.5.3\include\c++\i686-pc-cygwin"/>
 <includePath path="C:\altera\13.0sp1\quartus\bin\cygwin\lib\gcc\i686-pc-cygwin\4.5.3\include\c++\backward"/>
@@ -236,11 +236,11 @@
 <definedSymbol symbol="ALT_SINGLE_THREADED=1"/>
 </collector>
 </instance>
-<instance id="preference.org.eclipse.cdt.managedbuilder.core.configurationDataProvider.1630836687;preference.org.eclipse.cdt.managedbuilder.core.configurationDataProvider.1630836687.;cdt.managedbuild.tool.gnu.c.compiler.cygwin.base.751031005;cdt.managedbuild.tool.gnu.c.compiler.input.cygwin.246345856">
+<instance id="preference.org.eclipse.cdt.managedbuilder.core.configurationDataProvider.465849544;preference.org.eclipse.cdt.managedbuilder.core.configurationDataProvider.465849544.;cdt.managedbuild.tool.gnu.c.compiler.cygwin.base.949449326;cdt.managedbuild.tool.gnu.c.compiler.input.cygwin.1032889050">
 <collector id="org.eclipse.cdt.make.core.PerProjectSICollector">
-<includePath path="C:/Users/damit/Desktop/FPGA_Deo_Nano/DE0-Nano_v.1.2.2_SystemCD/Demonstration/Niosii_FPGA/Software/Niosii_bsp/HAL/inc"/>
-<includePath path="C:/Users/damit/Desktop/FPGA_Deo_Nano/DE0-Nano_v.1.2.2_SystemCD/Demonstration/Niosii_FPGA/Software/Niosii_bsp/"/>
-<includePath path="C:/Users/damit/Desktop/FPGA_Deo_Nano/DE0-Nano_v.1.2.2_SystemCD/Demonstration/Niosii_FPGA/Software/Niosii_bsp/drivers/inc"/>
+<includePath path="C:/Users/damit/Desktop/FPGA_Deo_Nano/DE0-Nano_v.1.2.2_SystemCD/Demonstration/Niosii_FPGA/Software/NIOSII_bsp/HAL/inc"/>
+<includePath path="C:/Users/damit/Desktop/FPGA_Deo_Nano/DE0-Nano_v.1.2.2_SystemCD/Demonstration/Niosii_FPGA/Software/NIOSII_bsp/"/>
+<includePath path="C:/Users/damit/Desktop/FPGA_Deo_Nano/DE0-Nano_v.1.2.2_SystemCD/Demonstration/Niosii_FPGA/Software/NIOSII_bsp/drivers/inc"/>
 <includePath path="C:\altera\13.0sp1\quartus\bin\cygwin\lib\gcc\i686-pc-cygwin\4.5.3\include"/>
 <includePath path="C:\altera\13.0sp1\quartus\bin\cygwin\lib\gcc\i686-pc-cygwin\4.5.3\include-fixed"/>
 <includePath path="C:\altera\13.0sp1\quartus\bin\cygwin\usr\include"/>

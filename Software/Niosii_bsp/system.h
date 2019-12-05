@@ -4,7 +4,7 @@
  * Machine generated for CPU 'cpu' in SOPC Builder design 'De0_Nano_Qsys2019'
  * SOPC Builder design path: C:/Users/damit/Desktop/FPGA_Deo_Nano/DE0-Nano_v.1.2.2_SystemCD/Demonstration/Niosii_FPGA/De0_Nano_Qsys2019.sopcinfo
  *
- * Generated: Mon Dec 02 21:08:12 EST 2019
+ * Generated: Thu Dec 05 21:11:25 EST 2019
  */
 
 /*
@@ -132,6 +132,7 @@
 #define __ALTERA_AVALON_ONCHIP_MEMORY2
 #define __ALTERA_AVALON_PIO
 #define __ALTERA_AVALON_SYSID_QSYS
+#define __ALTERA_AVALON_UART
 #define __ALTERA_NIOS2_QSYS
 
 
@@ -151,19 +152,19 @@
 #define ALT_NUM_INTERNAL_INTERRUPT_CONTROLLERS 1
 #define ALT_NUM_INTERRUPT_CONTROLLERS 1
 #define ALT_STDERR "/dev/jtag_uart"
-#define ALT_STDERR_BASE 0x4011018
+#define ALT_STDERR_BASE 0x4011038
 #define ALT_STDERR_DEV jtag_uart
 #define ALT_STDERR_IS_JTAG_UART
 #define ALT_STDERR_PRESENT
 #define ALT_STDERR_TYPE "altera_avalon_jtag_uart"
 #define ALT_STDIN "/dev/jtag_uart"
-#define ALT_STDIN_BASE 0x4011018
+#define ALT_STDIN_BASE 0x4011038
 #define ALT_STDIN_DEV jtag_uart
 #define ALT_STDIN_IS_JTAG_UART
 #define ALT_STDIN_PRESENT
 #define ALT_STDIN_TYPE "altera_avalon_jtag_uart"
 #define ALT_STDOUT "/dev/jtag_uart"
-#define ALT_STDOUT_BASE 0x4011018
+#define ALT_STDOUT_BASE 0x4011038
 #define ALT_STDOUT_DEV jtag_uart
 #define ALT_STDOUT_IS_JTAG_UART
 #define ALT_STDOUT_PRESENT
@@ -187,7 +188,7 @@
  */
 
 #define ALT_MODULE_CLASS_jtag_uart altera_avalon_jtag_uart
-#define JTAG_UART_BASE 0x4011018
+#define JTAG_UART_BASE 0x4011038
 #define JTAG_UART_IRQ 0
 #define JTAG_UART_IRQ_INTERRUPT_CONTROLLER_ID 0
 #define JTAG_UART_NAME "/dev/jtag_uart"
@@ -234,7 +235,7 @@
  */
 
 #define ALT_MODULE_CLASS_pio_led altera_avalon_pio
-#define PIO_LED_BASE 0x4011000
+#define PIO_LED_BASE 0x4011020
 #define PIO_LED_BIT_CLEARING_EDGE_REGISTER 0
 #define PIO_LED_BIT_MODIFYING_OUTPUT_REGISTER 0
 #define PIO_LED_CAPTURE 0
@@ -300,13 +301,38 @@
  */
 
 #define ALT_MODULE_CLASS_sysid altera_avalon_sysid_qsys
-#define SYSID_BASE 0x4011010
+#define SYSID_BASE 0x4011030
 #define SYSID_ID 0
 #define SYSID_IRQ -1
 #define SYSID_IRQ_INTERRUPT_CONTROLLER_ID -1
 #define SYSID_NAME "/dev/sysid"
 #define SYSID_SPAN 8
-#define SYSID_TIMESTAMP 1575281018
+#define SYSID_TIMESTAMP 1575540367
 #define SYSID_TYPE "altera_avalon_sysid_qsys"
+
+
+/*
+ * uart_0 configuration
+ *
+ */
+
+#define ALT_MODULE_CLASS_uart_0 altera_avalon_uart
+#define UART_0_BASE 0x4011000
+#define UART_0_BAUD 115200
+#define UART_0_DATA_BITS 8
+#define UART_0_FIXED_BAUD 1
+#define UART_0_FREQ 50000000
+#define UART_0_IRQ 1
+#define UART_0_IRQ_INTERRUPT_CONTROLLER_ID 0
+#define UART_0_NAME "/dev/uart_0"
+#define UART_0_PARITY 'N'
+#define UART_0_SIM_CHAR_STREAM ""
+#define UART_0_SIM_TRUE_BAUD 0
+#define UART_0_SPAN 32
+#define UART_0_STOP_BITS 1
+#define UART_0_SYNC_REG_DEPTH 2
+#define UART_0_TYPE "altera_avalon_uart"
+#define UART_0_USE_CTS_RTS 0
+#define UART_0_USE_EOP_REGISTER 0
 
 #endif /* __SYSTEM_H_ */
