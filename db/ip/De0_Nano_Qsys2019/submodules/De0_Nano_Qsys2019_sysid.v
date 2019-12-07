@@ -36,7 +36,7 @@ module De0_Nano_Qsys2019_sysid (
 
   wire    [ 31: 0] readdata;
   //control_slave, which is an e_avalon_slave
-  assign readdata = address ? 1575540367 : 0;
+  assign readdata = address ? 1575713091 : 0;
 
 endmodule
 

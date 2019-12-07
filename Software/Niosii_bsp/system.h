@@ -4,7 +4,7 @@
  * Machine generated for CPU 'cpu' in SOPC Builder design 'De0_Nano_Qsys2019'
  * SOPC Builder design path: C:/Users/damit/Desktop/FPGA_Deo_Nano/DE0-Nano_v.1.2.2_SystemCD/Demonstration/Niosii_FPGA/De0_Nano_Qsys2019.sopcinfo
  *
- * Generated: Thu Dec 05 21:11:25 EST 2019
+ * Generated: Sat Dec 07 21:14:40 EST 2019
  */
 
 /*
@@ -152,19 +152,19 @@
 #define ALT_NUM_INTERNAL_INTERRUPT_CONTROLLERS 1
 #define ALT_NUM_INTERRUPT_CONTROLLERS 1
 #define ALT_STDERR "/dev/jtag_uart"
-#define ALT_STDERR_BASE 0x4011038
+#define ALT_STDERR_BASE 0x4011058
 #define ALT_STDERR_DEV jtag_uart
 #define ALT_STDERR_IS_JTAG_UART
 #define ALT_STDERR_PRESENT
 #define ALT_STDERR_TYPE "altera_avalon_jtag_uart"
 #define ALT_STDIN "/dev/jtag_uart"
-#define ALT_STDIN_BASE 0x4011038
+#define ALT_STDIN_BASE 0x4011058
 #define ALT_STDIN_DEV jtag_uart
 #define ALT_STDIN_IS_JTAG_UART
 #define ALT_STDIN_PRESENT
 #define ALT_STDIN_TYPE "altera_avalon_jtag_uart"
 #define ALT_STDOUT "/dev/jtag_uart"
-#define ALT_STDOUT_BASE 0x4011038
+#define ALT_STDOUT_BASE 0x4011058
 #define ALT_STDOUT_DEV jtag_uart
 #define ALT_STDOUT_IS_JTAG_UART
 #define ALT_STDOUT_PRESENT
@@ -188,7 +188,7 @@
  */
 
 #define ALT_MODULE_CLASS_jtag_uart altera_avalon_jtag_uart
-#define JTAG_UART_BASE 0x4011038
+#define JTAG_UART_BASE 0x4011058
 #define JTAG_UART_IRQ 0
 #define JTAG_UART_IRQ_INTERRUPT_CONTROLLER_ID 0
 #define JTAG_UART_NAME "/dev/jtag_uart"
@@ -235,7 +235,7 @@
  */
 
 #define ALT_MODULE_CLASS_pio_led altera_avalon_pio
-#define PIO_LED_BASE 0x4011020
+#define PIO_LED_BASE 0x4011040
 #define PIO_LED_BIT_CLEARING_EDGE_REGISTER 0
 #define PIO_LED_BIT_MODIFYING_OUTPUT_REGISTER 0
 #define PIO_LED_CAPTURE 0
@@ -254,6 +254,60 @@
 #define PIO_LED_RESET_VALUE 0
 #define PIO_LED_SPAN 16
 #define PIO_LED_TYPE "altera_avalon_pio"
+
+
+/*
+ * pio_micro_in configuration
+ *
+ */
+
+#define ALT_MODULE_CLASS_pio_micro_in altera_avalon_pio
+#define PIO_MICRO_IN_BASE 0x4011020
+#define PIO_MICRO_IN_BIT_CLEARING_EDGE_REGISTER 0
+#define PIO_MICRO_IN_BIT_MODIFYING_OUTPUT_REGISTER 0
+#define PIO_MICRO_IN_CAPTURE 0
+#define PIO_MICRO_IN_DATA_WIDTH 8
+#define PIO_MICRO_IN_DO_TEST_BENCH_WIRING 0
+#define PIO_MICRO_IN_DRIVEN_SIM_VALUE 0
+#define PIO_MICRO_IN_EDGE_TYPE "NONE"
+#define PIO_MICRO_IN_FREQ 50000000
+#define PIO_MICRO_IN_HAS_IN 1
+#define PIO_MICRO_IN_HAS_OUT 0
+#define PIO_MICRO_IN_HAS_TRI 0
+#define PIO_MICRO_IN_IRQ -1
+#define PIO_MICRO_IN_IRQ_INTERRUPT_CONTROLLER_ID -1
+#define PIO_MICRO_IN_IRQ_TYPE "NONE"
+#define PIO_MICRO_IN_NAME "/dev/pio_micro_in"
+#define PIO_MICRO_IN_RESET_VALUE 0
+#define PIO_MICRO_IN_SPAN 16
+#define PIO_MICRO_IN_TYPE "altera_avalon_pio"
+
+
+/*
+ * pio_micro_out configuration
+ *
+ */
+
+#define ALT_MODULE_CLASS_pio_micro_out altera_avalon_pio
+#define PIO_MICRO_OUT_BASE 0x4011030
+#define PIO_MICRO_OUT_BIT_CLEARING_EDGE_REGISTER 0
+#define PIO_MICRO_OUT_BIT_MODIFYING_OUTPUT_REGISTER 0
+#define PIO_MICRO_OUT_CAPTURE 0
+#define PIO_MICRO_OUT_DATA_WIDTH 8
+#define PIO_MICRO_OUT_DO_TEST_BENCH_WIRING 0
+#define PIO_MICRO_OUT_DRIVEN_SIM_VALUE 0
+#define PIO_MICRO_OUT_EDGE_TYPE "NONE"
+#define PIO_MICRO_OUT_FREQ 50000000
+#define PIO_MICRO_OUT_HAS_IN 0
+#define PIO_MICRO_OUT_HAS_OUT 1
+#define PIO_MICRO_OUT_HAS_TRI 0
+#define PIO_MICRO_OUT_IRQ -1
+#define PIO_MICRO_OUT_IRQ_INTERRUPT_CONTROLLER_ID -1
+#define PIO_MICRO_OUT_IRQ_TYPE "NONE"
+#define PIO_MICRO_OUT_NAME "/dev/pio_micro_out"
+#define PIO_MICRO_OUT_RESET_VALUE 0
+#define PIO_MICRO_OUT_SPAN 16
+#define PIO_MICRO_OUT_TYPE "altera_avalon_pio"
 
 
 /*
@@ -301,13 +355,13 @@
  */
 
 #define ALT_MODULE_CLASS_sysid altera_avalon_sysid_qsys
-#define SYSID_BASE 0x4011030
+#define SYSID_BASE 0x4011050
 #define SYSID_ID 0
 #define SYSID_IRQ -1
 #define SYSID_IRQ_INTERRUPT_CONTROLLER_ID -1
 #define SYSID_NAME "/dev/sysid"
 #define SYSID_SPAN 8
-#define SYSID_TIMESTAMP 1575540367
+#define SYSID_TIMESTAMP 1575713091
 #define SYSID_TYPE "altera_avalon_sysid_qsys"
 
 

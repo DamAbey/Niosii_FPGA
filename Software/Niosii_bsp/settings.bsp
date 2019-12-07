@@ -2,8 +2,8 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>hal</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>Dec 5, 2019 9:11:23 PM</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1575540683853</BspGeneratedUnixTimeStamp>
+        <BspGeneratedTimeStamp>Dec 7, 2019 9:14:39 PM</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1575713679373</BspGeneratedUnixTimeStamp>
         <BspGeneratedLocation>C:\Users\damit\Desktop\FPGA_Deo_Nano\DE0-Nano_v.1.2.2_SystemCD\Demonstration\Niosii_FPGA\software\NIOSII_bsp</BspGeneratedLocation>
         <BspSettingsFile>.\settings.bsp</BspSettingsFile>
         <SopcDesignFile>C:\Users\damit\Desktop\FPGA_Deo_Nano\DE0-Nano_v.1.2.2_SystemCD\Demonstration\Niosii_FPGA\De0_Nano_Qsys2019.sopcinfo</SopcDesignFile>
@@ -905,20 +905,32 @@
                 <attributes>printable</attributes>
         </MemoryMap>
         <MemoryMap>
-                <slaveDescriptor>pio_led</slaveDescriptor>
+                <slaveDescriptor>pio_micro_in</slaveDescriptor>
                 <addressRange>0x04011020 - 0x0401102F</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
+                <slaveDescriptor>pio_micro_out</slaveDescriptor>
+                <addressRange>0x04011030 - 0x0401103F</addressRange>
+                <addressSpan>16</addressSpan>
+                <attributes/>
+        </MemoryMap>
+        <MemoryMap>
+                <slaveDescriptor>pio_led</slaveDescriptor>
+                <addressRange>0x04011040 - 0x0401104F</addressRange>
+                <addressSpan>16</addressSpan>
+                <attributes/>
+        </MemoryMap>
+        <MemoryMap>
                 <slaveDescriptor>sysid</slaveDescriptor>
-                <addressRange>0x04011030 - 0x04011037</addressRange>
+                <addressRange>0x04011050 - 0x04011057</addressRange>
                 <addressSpan>8</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>jtag_uart</slaveDescriptor>
-                <addressRange>0x04011038 - 0x0401103F</addressRange>
+                <addressRange>0x04011058 - 0x0401105F</addressRange>
                 <addressSpan>8</addressSpan>
                 <attributes>printable</attributes>
         </MemoryMap>

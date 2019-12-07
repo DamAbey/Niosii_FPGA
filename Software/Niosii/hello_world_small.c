@@ -90,16 +90,24 @@ int main()
     //alt_putstr("Hi, Hello from Nios II!\n");
 	printf("Hi Damith");
     int count = 0;
-    int delay;
+    int micro_out=0;
+    int micro_in=0;
+    int i=0;
     while(1)
     {
         IOWR_ALTERA_AVALON_PIO_DATA(PIO_LED_BASE, count);
         IOWR_ALTERA_AVALON_UART_TXDATA(UART_0_BASE, 'A');
 
     	//count= IORD_ALTERA_AVALON_PIO_DATA(PIO_LED_BASE);
-        delay = 0;
         usleep(100000);
         count=count+1;
+        for (i=1;i<10;i++)
+        {
+        	IOWR_ALTERA_AVALON_PIO_DATA(PIO_MICRO_OUT_BASE, i);
+        	usleep(100);
+        	micro_in=IORD_ALTERA_AVALON_PIO_DATA(PIO_MICRO_IN_BASE);
+        	printf("The echo is %i \n",micro_in);
+        }
     }
     return 0;
 }
