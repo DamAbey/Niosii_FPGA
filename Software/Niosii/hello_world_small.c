@@ -100,14 +100,24 @@ int main()
 
     	//count= IORD_ALTERA_AVALON_PIO_DATA(PIO_LED_BASE);
         usleep(100000);
-        count=count+1;
+
+
         for (i=1;i<10;i++)
         {
-        	IOWR_ALTERA_AVALON_PIO_DATA(PIO_MICRO_OUT_BASE, i);
-        	usleep(100);
-        	micro_in=IORD_ALTERA_AVALON_PIO_DATA(PIO_MICRO_IN_BASE);
+        	IOWR_ALTERA_AVALON_PIO_DIRECTION(PIO_DATA_BASE, 0xFF);// 1: set direction of all lines to output
+        	usleep(10);
+        	IOWR_ALTERA_AVALON_PIO_DATA(PIO_DATA_BASE, i);// set data to be written to FPGA
+        	usleep(10);
+        	IOWR_ALTERA_AVALON_PIO_DATA(PIO_COMMAND_BASE, 0x00);// command to write data to FPGA
+        	usleep(10);
+        	IOWR_ALTERA_AVALON_PIO_DIRECTION(PIO_DATA_BASE, 0x00);// 0: set direction of all lines to input
+        	usleep(10);
+        	IOWR_ALTERA_AVALON_PIO_DATA(PIO_COMMAND_BASE, 0x01);// command to read data from FPGA
+        	usleep(10);
+        	micro_in=IORD_ALTERA_AVALON_PIO_DATA(PIO_DATA_BASE);
         	printf("The echo is %i \n",micro_in);
         }
+
     }
     return 0;
 }

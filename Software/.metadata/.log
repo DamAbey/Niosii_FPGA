@@ -1,4 +1,4 @@
-!SESSION 2019-12-07 21:13:58.587 -----------------------------------------------
+!SESSION 2019-12-08 18:15:47.515 -----------------------------------------------
 eclipse.buildId=M20120208-0800
 java.version=1.6.0_23
 java.vendor=Sun Microsystems Inc.
@@ -6,7 +6,7 @@ BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
 Framework arguments:  -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
 Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
 
-!ENTRY org.eclipse.equinox.p2.reconciler.dropins 4 0 2019-12-07 21:13:59.322
+!ENTRY org.eclipse.equinox.p2.reconciler.dropins 4 0 2019-12-08 18:15:48.244
 !MESSAGE FrameworkEvent ERROR
 !STACK 0
 org.osgi.framework.BundleException: The bundle "org.eclipse.equinox.p2.reconciler.dropins_1.1.100.v20110815-1419 [152]" could not be resolved. Reason: Missing Constraint: Require-Bundle: org.eclipse.equinox.p2.touchpoint.eclipse; bundle-version="1.0.0"
@@ -24,13 +24,13 @@ org.osgi.framework.BundleException: The bundle "org.eclipse.equinox.p2.reconcile
 	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
 	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
 
-!ENTRY org.eclipse.cdt.core 1 0 2019-12-07 21:14:42.681
-!MESSAGE Indexed 'NIOSII_bsp' (83 sources, 61 headers) in 1.17 sec: 1,057 declarations; 2,748 references; 119 unresolved inclusions; 5 syntax errors; 219 unresolved names (5.44%)
+!ENTRY org.eclipse.cdt.core 1 0 2019-12-08 18:16:31.940
+!MESSAGE Indexed 'NIOSII_bsp' (83 sources, 61 headers) in 1.30 sec: 1,057 declarations; 2,748 references; 119 unresolved inclusions; 5 syntax errors; 219 unresolved names (5.44%)
 
-!ENTRY org.eclipse.cdt.core 1 0 2019-12-07 21:14:46.732
-!MESSAGE Indexed 'NIOSII' (1 sources, 13 headers) in 0.02 sec: 1 declarations; 1 references; 14 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+!ENTRY org.eclipse.cdt.core 1 0 2019-12-08 18:16:36.291
+!MESSAGE Indexed 'NIOSII' (1 sources, 13 headers) in 0.03 sec: 1 declarations; 1 references; 14 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
 
-!ENTRY org.eclipse.ui.workbench 4 0 2019-12-07 21:15:44.546
+!ENTRY org.eclipse.ui.workbench 4 0 2019-12-08 18:17:47.944
 !MESSAGE WARNING: Prevented recursive attempt to activate part org.eclipse.cdt.ui.editor.CEditor while still in the middle of activating part org.eclipse.ui.navigator.ProjectExplorer
 !STACK 0
 java.lang.RuntimeException: WARNING: Prevented recursive attempt to activate part org.eclipse.cdt.ui.editor.CEditor while still in the middle of activating part org.eclipse.ui.navigator.ProjectExplorer
@@ -116,7 +116,7 @@ java.lang.RuntimeException: WARNING: Prevented recursive attempt to activate par
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1410)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1386)
 
-!ENTRY org.eclipse.ui.workbench 4 0 2019-12-07 21:15:44.555
+!ENTRY org.eclipse.ui.workbench 4 0 2019-12-08 18:17:47.954
 !MESSAGE WARNING: Prevented recursive attempt to activate part org.eclipse.cdt.ui.editor.CEditor while still in the middle of activating part org.eclipse.ui.navigator.ProjectExplorer
 !STACK 0
 java.lang.RuntimeException: WARNING: Prevented recursive attempt to activate part org.eclipse.cdt.ui.editor.CEditor while still in the middle of activating part org.eclipse.ui.navigator.ProjectExplorer
@@ -214,84 +214,8 @@ java.lang.RuntimeException: WARNING: Prevented recursive attempt to activate par
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1410)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1386)
 
-!ENTRY com.altera.sbtgui.launch 1 0 2019-12-07 21:16:22.081
-!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x4011050 --id=0x0 --timestamp=1575713091]
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-08 18:18:00.327
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x4011050 --id=0x0 --timestamp=1575789155]
 
-!ENTRY com.altera.sbtgui.launch 1 0 2019-12-07 21:16:24.681
-!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x4011050 --id=0x0 --timestamp=1575713091 /cygdrive/c/Users/damit/Desktop/FPGA_Deo_Nano/DE0-Nano_v.1.2.2_SystemCD/Demonstration/Niosii_FPGA/Software/NIOSII/NIOSII.elf]
-
-!ENTRY org.eclipse.osgi 4 0 2019-12-07 21:20:07.164
-!MESSAGE Unexpected exception occurred loading manifest for bundle at the location: reference:file:plugins/org.eclipse.rse.subsystems.shells.telnet_1.2.200.v201101042155.jar.
-!STACK 0
-org.osgi.framework.BundleException: An error occurred while reading the manifest file.
-	at org.eclipse.osgi.framework.util.Headers.parseManifest(Headers.java:259)
-	at org.eclipse.osgi.internal.baseadaptor.AdaptorUtil.loadManifestFrom(AdaptorUtil.java:191)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseStorageHook.getGeneratedManifest0(EclipseStorageHook.java:410)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseStorageHook.getGeneratedManifest(EclipseStorageHook.java:397)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseStorageHook.createCachedManifest(EclipseStorageHook.java:392)
-	at org.eclipse.core.runtime.internal.adaptor.CachedManifest.getManifest(CachedManifest.java:42)
-	at org.eclipse.core.runtime.internal.adaptor.CachedManifest.get(CachedManifest.java:142)
-	at org.eclipse.core.runtime.internal.adaptor.CachedManifest.get(CachedManifest.java:1)
-	at org.eclipse.osgi.framework.internal.core.ManifestLocalization.lookupResourceBundle(ManifestLocalization.java:104)
-	at org.eclipse.osgi.framework.internal.core.ManifestLocalization.getResourceBundle(ManifestLocalization.java:91)
-	at org.eclipse.osgi.framework.internal.core.ManifestLocalization.getHeaders(ManifestLocalization.java:52)
-	at org.eclipse.osgi.framework.internal.core.AbstractBundle.getHeaders(AbstractBundle.java:964)
-	at org.eclipse.osgi.framework.internal.core.AbstractBundle.getHeaders(AbstractBundle.java:911)
-	at org.eclipse.epp.usagedata.internal.gathering.monitors.BundleUsageMonitor.getBundleVersion(BundleUsageMonitor.java:96)
-	at org.eclipse.epp.usagedata.internal.gathering.monitors.BundleUsageMonitor.getBundleVersion(BundleUsageMonitor.java:92)
-	at org.eclipse.epp.usagedata.internal.gathering.monitors.BundleUsageMonitor$1.bundleChanged(BundleUsageMonitor.java:52)
-	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.dispatchEvent(BundleContextImpl.java:847)
-	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
-	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
-Caused by: java.util.zip.ZipException: ZipFile closed
-	at java.util.zip.ZipFile.ensureOpenOrZipException(Unknown Source)
-	at java.util.zip.ZipFile.access$1100(Unknown Source)
-	at java.util.zip.ZipFile$ZipFileInputStream.read(Unknown Source)
-	at java.util.zip.ZipFile$1.fill(Unknown Source)
-	at java.util.zip.InflaterInputStream.read(Unknown Source)
-	at org.eclipse.osgi.baseadaptor.bundlefile.ZipBundleEntry$ZipBundleEntryInputStream.read(ZipBundleEntry.java:157)
-	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
-	at sun.nio.cs.StreamDecoder.implRead(Unknown Source)
-	at sun.nio.cs.StreamDecoder.read(Unknown Source)
-	at java.io.InputStreamReader.read(Unknown Source)
-	at java.io.BufferedReader.fill(Unknown Source)
-	at java.io.BufferedReader.readLine(Unknown Source)
-	at java.io.BufferedReader.readLine(Unknown Source)
-	at org.eclipse.osgi.util.ManifestElement.parseBundleManifest(ManifestElement.java:516)
-	at org.eclipse.osgi.framework.util.Headers.parseManifest(Headers.java:257)
-	... 18 more
-Root exception:
-java.util.zip.ZipException: ZipFile closed
-	at java.util.zip.ZipFile.ensureOpenOrZipException(Unknown Source)
-	at java.util.zip.ZipFile.access$1100(Unknown Source)
-	at java.util.zip.ZipFile$ZipFileInputStream.read(Unknown Source)
-	at java.util.zip.ZipFile$1.fill(Unknown Source)
-	at java.util.zip.InflaterInputStream.read(Unknown Source)
-	at org.eclipse.osgi.baseadaptor.bundlefile.ZipBundleEntry$ZipBundleEntryInputStream.read(ZipBundleEntry.java:157)
-	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
-	at sun.nio.cs.StreamDecoder.implRead(Unknown Source)
-	at sun.nio.cs.StreamDecoder.read(Unknown Source)
-	at java.io.InputStreamReader.read(Unknown Source)
-	at java.io.BufferedReader.fill(Unknown Source)
-	at java.io.BufferedReader.readLine(Unknown Source)
-	at java.io.BufferedReader.readLine(Unknown Source)
-	at org.eclipse.osgi.util.ManifestElement.parseBundleManifest(ManifestElement.java:516)
-	at org.eclipse.osgi.framework.util.Headers.parseManifest(Headers.java:257)
-	at org.eclipse.osgi.internal.baseadaptor.AdaptorUtil.loadManifestFrom(AdaptorUtil.java:191)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseStorageHook.getGeneratedManifest0(EclipseStorageHook.java:410)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseStorageHook.getGeneratedManifest(EclipseStorageHook.java:397)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseStorageHook.createCachedManifest(EclipseStorageHook.java:392)
-	at org.eclipse.core.runtime.internal.adaptor.CachedManifest.getManifest(CachedManifest.java:42)
-	at org.eclipse.core.runtime.internal.adaptor.CachedManifest.get(CachedManifest.java:142)
-	at org.eclipse.core.runtime.internal.adaptor.CachedManifest.get(CachedManifest.java:1)
-	at org.eclipse.osgi.framework.internal.core.ManifestLocalization.lookupResourceBundle(ManifestLocalization.java:104)
-	at org.eclipse.osgi.framework.internal.core.ManifestLocalization.getResourceBundle(ManifestLocalization.java:91)
-	at org.eclipse.osgi.framework.internal.core.ManifestLocalization.getHeaders(ManifestLocalization.java:52)
-	at org.eclipse.osgi.framework.internal.core.AbstractBundle.getHeaders(AbstractBundle.java:964)
-	at org.eclipse.osgi.framework.internal.core.AbstractBundle.getHeaders(AbstractBundle.java:911)
-	at org.eclipse.epp.usagedata.internal.gathering.monitors.BundleUsageMonitor.getBundleVersion(BundleUsageMonitor.java:96)
-	at org.eclipse.epp.usagedata.internal.gathering.monitors.BundleUsageMonitor.getBundleVersion(BundleUsageMonitor.java:92)
-	at org.eclipse.epp.usagedata.internal.gathering.monitors.BundleUsageMonitor$1.bundleChanged(BundleUsageMonitor.java:52)
-	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.dispatchEvent(BundleContextImpl.java:847)
-	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
-	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+!ENTRY com.altera.sbtgui.launch 1 0 2019-12-08 18:18:03.158
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x4011050 --id=0x0 --timestamp=1575789155 /cygdrive/c/Users/damit/Desktop/FPGA_Deo_Nano/DE0-Nano_v.1.2.2_SystemCD/Demonstration/Niosii_FPGA/Software/NIOSII/NIOSII.elf]

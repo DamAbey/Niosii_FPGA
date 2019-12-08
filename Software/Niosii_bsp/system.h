@@ -4,7 +4,7 @@
  * Machine generated for CPU 'cpu' in SOPC Builder design 'De0_Nano_Qsys2019'
  * SOPC Builder design path: C:/Users/damit/Desktop/FPGA_Deo_Nano/DE0-Nano_v.1.2.2_SystemCD/Demonstration/Niosii_FPGA/De0_Nano_Qsys2019.sopcinfo
  *
- * Generated: Sat Dec 07 21:14:40 EST 2019
+ * Generated: Sun Dec 08 18:16:29 EST 2019
  */
 
 /*
@@ -230,6 +230,60 @@
 
 
 /*
+ * pio_command configuration
+ *
+ */
+
+#define ALT_MODULE_CLASS_pio_command altera_avalon_pio
+#define PIO_COMMAND_BASE 0x4011020
+#define PIO_COMMAND_BIT_CLEARING_EDGE_REGISTER 0
+#define PIO_COMMAND_BIT_MODIFYING_OUTPUT_REGISTER 0
+#define PIO_COMMAND_CAPTURE 0
+#define PIO_COMMAND_DATA_WIDTH 8
+#define PIO_COMMAND_DO_TEST_BENCH_WIRING 0
+#define PIO_COMMAND_DRIVEN_SIM_VALUE 0
+#define PIO_COMMAND_EDGE_TYPE "NONE"
+#define PIO_COMMAND_FREQ 50000000
+#define PIO_COMMAND_HAS_IN 0
+#define PIO_COMMAND_HAS_OUT 1
+#define PIO_COMMAND_HAS_TRI 0
+#define PIO_COMMAND_IRQ -1
+#define PIO_COMMAND_IRQ_INTERRUPT_CONTROLLER_ID -1
+#define PIO_COMMAND_IRQ_TYPE "NONE"
+#define PIO_COMMAND_NAME "/dev/pio_command"
+#define PIO_COMMAND_RESET_VALUE 0
+#define PIO_COMMAND_SPAN 16
+#define PIO_COMMAND_TYPE "altera_avalon_pio"
+
+
+/*
+ * pio_data configuration
+ *
+ */
+
+#define ALT_MODULE_CLASS_pio_data altera_avalon_pio
+#define PIO_DATA_BASE 0x4011030
+#define PIO_DATA_BIT_CLEARING_EDGE_REGISTER 0
+#define PIO_DATA_BIT_MODIFYING_OUTPUT_REGISTER 0
+#define PIO_DATA_CAPTURE 0
+#define PIO_DATA_DATA_WIDTH 16
+#define PIO_DATA_DO_TEST_BENCH_WIRING 0
+#define PIO_DATA_DRIVEN_SIM_VALUE 0
+#define PIO_DATA_EDGE_TYPE "NONE"
+#define PIO_DATA_FREQ 50000000
+#define PIO_DATA_HAS_IN 1
+#define PIO_DATA_HAS_OUT 1
+#define PIO_DATA_HAS_TRI 0
+#define PIO_DATA_IRQ -1
+#define PIO_DATA_IRQ_INTERRUPT_CONTROLLER_ID -1
+#define PIO_DATA_IRQ_TYPE "NONE"
+#define PIO_DATA_NAME "/dev/pio_data"
+#define PIO_DATA_RESET_VALUE 0
+#define PIO_DATA_SPAN 16
+#define PIO_DATA_TYPE "altera_avalon_pio"
+
+
+/*
  * pio_led configuration
  *
  */
@@ -254,60 +308,6 @@
 #define PIO_LED_RESET_VALUE 0
 #define PIO_LED_SPAN 16
 #define PIO_LED_TYPE "altera_avalon_pio"
-
-
-/*
- * pio_micro_in configuration
- *
- */
-
-#define ALT_MODULE_CLASS_pio_micro_in altera_avalon_pio
-#define PIO_MICRO_IN_BASE 0x4011020
-#define PIO_MICRO_IN_BIT_CLEARING_EDGE_REGISTER 0
-#define PIO_MICRO_IN_BIT_MODIFYING_OUTPUT_REGISTER 0
-#define PIO_MICRO_IN_CAPTURE 0
-#define PIO_MICRO_IN_DATA_WIDTH 8
-#define PIO_MICRO_IN_DO_TEST_BENCH_WIRING 0
-#define PIO_MICRO_IN_DRIVEN_SIM_VALUE 0
-#define PIO_MICRO_IN_EDGE_TYPE "NONE"
-#define PIO_MICRO_IN_FREQ 50000000
-#define PIO_MICRO_IN_HAS_IN 1
-#define PIO_MICRO_IN_HAS_OUT 0
-#define PIO_MICRO_IN_HAS_TRI 0
-#define PIO_MICRO_IN_IRQ -1
-#define PIO_MICRO_IN_IRQ_INTERRUPT_CONTROLLER_ID -1
-#define PIO_MICRO_IN_IRQ_TYPE "NONE"
-#define PIO_MICRO_IN_NAME "/dev/pio_micro_in"
-#define PIO_MICRO_IN_RESET_VALUE 0
-#define PIO_MICRO_IN_SPAN 16
-#define PIO_MICRO_IN_TYPE "altera_avalon_pio"
-
-
-/*
- * pio_micro_out configuration
- *
- */
-
-#define ALT_MODULE_CLASS_pio_micro_out altera_avalon_pio
-#define PIO_MICRO_OUT_BASE 0x4011030
-#define PIO_MICRO_OUT_BIT_CLEARING_EDGE_REGISTER 0
-#define PIO_MICRO_OUT_BIT_MODIFYING_OUTPUT_REGISTER 0
-#define PIO_MICRO_OUT_CAPTURE 0
-#define PIO_MICRO_OUT_DATA_WIDTH 8
-#define PIO_MICRO_OUT_DO_TEST_BENCH_WIRING 0
-#define PIO_MICRO_OUT_DRIVEN_SIM_VALUE 0
-#define PIO_MICRO_OUT_EDGE_TYPE "NONE"
-#define PIO_MICRO_OUT_FREQ 50000000
-#define PIO_MICRO_OUT_HAS_IN 0
-#define PIO_MICRO_OUT_HAS_OUT 1
-#define PIO_MICRO_OUT_HAS_TRI 0
-#define PIO_MICRO_OUT_IRQ -1
-#define PIO_MICRO_OUT_IRQ_INTERRUPT_CONTROLLER_ID -1
-#define PIO_MICRO_OUT_IRQ_TYPE "NONE"
-#define PIO_MICRO_OUT_NAME "/dev/pio_micro_out"
-#define PIO_MICRO_OUT_RESET_VALUE 0
-#define PIO_MICRO_OUT_SPAN 16
-#define PIO_MICRO_OUT_TYPE "altera_avalon_pio"
 
 
 /*
@@ -361,7 +361,7 @@
 #define SYSID_IRQ_INTERRUPT_CONTROLLER_ID -1
 #define SYSID_NAME "/dev/sysid"
 #define SYSID_SPAN 8
-#define SYSID_TIMESTAMP 1575713091
+#define SYSID_TIMESTAMP 1575789155
 #define SYSID_TYPE "altera_avalon_sysid_qsys"
 
 

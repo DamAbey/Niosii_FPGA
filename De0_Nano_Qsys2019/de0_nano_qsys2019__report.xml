@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy
+ date="2019.12.08.16:29:31"
+ outputDirectory="C:/Users/damit/Desktop/FPGA_Deo_Nano/DE0-Nano_v.1.2.2_SystemCD/Demonstration/Niosii_FPGA/de0_nano_qsys2019/">
+ <perimeter>
+  <parameter
+     name="AUTO_GENERATION_ID"
+     type="Integer"
+     defaultValue="0"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_UNIQUE_ID"
+     type="String"
+     defaultValue=""
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_FAMILY"
+     type="String"
+     defaultValue="Cyclone IV E"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE"
+     type="String"
+     defaultValue="EP4CE22F17C6"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLK_CLOCK_RATE"
+     type="Long"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLK_CLOCK_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLK_RESET_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <interface name="clk" kind="clock" start="0">
+   <property name="clockRate" value="50000000" />
+   <property name="externallyDriven" value="false" />
+   <property name="ptfSchematicName" value="" />
+   <port name="clk_clk" direction="input" role="clk" width="1" />
+  </interface>
+  <interface name="reset" kind="reset" start="0">
+   <property name="associatedClock" value="" />
+   <property name="synchronousEdges" value="NONE" />
+   <port name="reset_reset_n" direction="input" role="reset_n" width="1" />
+  </interface>
+  <interface name="pio_led_external_connection" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <port
+       name="pio_led_external_connection_export"
+       direction="output"
+       role="export"
+       width="8" />
+  </interface>
+  <interface name="sdram_wire" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <port name="sdram_wire_addr" direction="output" role="addr" width="13" />
+   <port name="sdram_wire_ba" direction="output" role="ba" width="2" />
+   <port name="sdram_wire_cas_n" direction="output" role="cas_n" width="1" />
+   <port name="sdram_wire_cke" direction="output" role="cke" width="1" />
+   <port name="sdram_wire_cs_n" direction="output" role="cs_n" width="1" />
+   <port name="sdram_wire_dq" direction="bidir" role="dq" width="16" />
+   <port name="sdram_wire_dqm" direction="output" role="dqm" width="2" />
+   <port name="sdram_wire_ras_n" direction="output" role="ras_n" width="1" />
+   <port name="sdram_wire_we_n" direction="output" role="we_n" width="1" />
+  </interface>
+  <interface name="uart" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <port name="uart_rxd" direction="input" role="rxd" width="1" />
+   <port name="uart_txd" direction="output" role="txd" width="1" />
+  </interface>
+  <interface name="pio_micro_out_external_connection" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <port
+       name="pio_micro_out_external_connection_in_port"
+       direction="input"
+       role="in_port"
+       width="16" />
+   <port
+       name="pio_micro_out_external_connection_out_port"
+       direction="output"
+       role="out_port"
+       width="16" />
+  </interface>
+  <interface name="pio_micro_in_external_connection" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <port
+       name="pio_micro_in_external_connection_export"
+       direction="output"
+       role="export"
+       width="8" />
+  </interface>
+ </perimeter>
+</deploy>

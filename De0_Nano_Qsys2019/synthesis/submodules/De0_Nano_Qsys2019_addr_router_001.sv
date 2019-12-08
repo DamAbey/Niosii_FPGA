@@ -220,19 +220,19 @@ module De0_Nano_Qsys2019_addr_router_001
     // ( 0x4011020 .. 0x4011030 )
     if ( {address[RG:PAD4],{PAD4{1'b0}}} == 27'h4011020   ) begin
             src_channel = 9'b100000000;
-            src_data[PKT_DEST_ID_H:PKT_DEST_ID_L] = 4;
+            src_data[PKT_DEST_ID_H:PKT_DEST_ID_L] = 3;
     end
 
     // ( 0x4011030 .. 0x4011040 )
     if ( {address[RG:PAD5],{PAD5{1'b0}}} == 27'h4011030   ) begin
             src_channel = 9'b010000000;
-            src_data[PKT_DEST_ID_H:PKT_DEST_ID_L] = 5;
+            src_data[PKT_DEST_ID_H:PKT_DEST_ID_L] = 4;
     end
 
     // ( 0x4011040 .. 0x4011050 )
     if ( {address[RG:PAD6],{PAD6{1'b0}}} == 27'h4011040   ) begin
             src_channel = 9'b000100000;
-            src_data[PKT_DEST_ID_H:PKT_DEST_ID_L] = 3;
+            src_data[PKT_DEST_ID_H:PKT_DEST_ID_L] = 5;
     end
 
     // ( 0x4011050 .. 0x4011058 )

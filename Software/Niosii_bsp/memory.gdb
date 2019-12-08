@@ -3,7 +3,7 @@
 # Machine generated for CPU 'cpu' in SOPC Builder design 'De0_Nano_Qsys2019'
 # SOPC Builder design path: C:/Users/damit/Desktop/FPGA_Deo_Nano/DE0-Nano_v.1.2.2_SystemCD/Demonstration/Niosii_FPGA/De0_Nano_Qsys2019.sopcinfo
 #
-# Generated: Sat Dec 07 21:14:40 EST 2019
+# Generated: Sun Dec 08 18:16:29 EST 2019
 
 # DO NOT MODIFY THIS FILE
 #
