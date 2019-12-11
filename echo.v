@@ -13,7 +13,7 @@ module echo (Data_in, Command, Data_out);
 				if(Command[0]==0)
 					Data_in_buf=Data_in; //read data to Data_in
 					
-				else
+				else if (Command[0]==1)
 					Data_out_buf=Data_in_buf<<3;
 
 			end

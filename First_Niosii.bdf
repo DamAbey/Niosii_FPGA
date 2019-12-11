@@ -459,7 +459,7 @@ applicable agreement for further details.
 )
 (symbol
 	(rect 448 832 672 912)
-	(text "echo" (rect 5 0 28 12)(font "Arial" ))
+	(text "date_day" (rect 5 0 51 12)(font "Arial" ))
 	(text "inst2" (rect 8 64 31 76)(font "Arial" ))
 	(port
 		(pt 0 32)

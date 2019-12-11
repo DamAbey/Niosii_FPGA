@@ -1,14 +1,14 @@
-Fitter Status : Successful - Sun Dec 08 18:14:01 2019
+Fitter Status : Successful - Wed Dec 11 21:10:54 2019
 Quartus II 32-bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
 Revision Name : First_Niosii
 Top-level Entity Name : First_Niosii
 Family : Cyclone IV E
 Device : EP4CE22F17C6
 Timing Models : Final
-Total logic elements : 4,398 / 22,320 ( 20 % )
-    Total combinational functions : 3,909 / 22,320 ( 18 % )
-    Dedicated logic registers : 2,815 / 22,320 ( 13 % )
-Total registers : 2884
+Total logic elements : 4,487 / 22,320 ( 20 % )
+    Total combinational functions : 4,007 / 22,320 ( 18 % )
+    Dedicated logic registers : 2,824 / 22,320 ( 13 % )
+Total registers : 2893
 Total pins : 50 / 154 ( 32 % )
 Total virtual pins : 0
 Total memory bits : 327,424 / 608,256 ( 54 % )
