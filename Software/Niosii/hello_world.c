@@ -112,7 +112,7 @@ int main()
         	IOWR_ALTERA_AVALON_PIO_DIRECTION(PIO_DATA_BASE, 0xFFFF);// 1: set direction of all lines to output
         	usleep(10);
 
-        	i=1987;
+        	i=2000;
         	IOWR_ALTERA_AVALON_PIO_DATA(PIO_COMMAND_BASE, (0x00));// this command is sent to prevent reading while data change
         	IOWR_ALTERA_AVALON_PIO_DATA(PIO_DATA_BASE, i);// set data to be written to FPGA
         	usleep(10);
@@ -139,7 +139,29 @@ int main()
         	IOWR_ALTERA_AVALON_PIO_DATA(PIO_COMMAND_BASE, 0x03);// command to read data from FPGA
         	usleep(10);
         	micro_in=IORD_ALTERA_AVALON_PIO_DATA(PIO_DATA_BASE);
-        	printf("The echo  %i \n",micro_in);
+        	printf("The day is: ");
+
+        	switch (micro_in)
+        	{
+        	case 0: printf("Sunday \n");break;
+        	case 1: printf("Monday \n");break;
+        	case 2: printf("Tuesday \n");break;
+        	case 3: printf("Wednesday \n");break;
+        	case 4: printf("Thursday \n");break;
+        	case 5: printf("Friday \n");break;
+        	case 6: printf("Saturday \n");break;
+        	default:printf("Invalid data \n");break;
+        	}
+
+        	/*
+        	 * 0-Sunday
+        	 * 1-Monday
+        	 * 2-Tuesday
+        	 * 3-Wednesday
+        	 * 4-Thursday
+        	 * 5-Friday
+        	 * 6-Saturday
+        	 */
 
 
     }
