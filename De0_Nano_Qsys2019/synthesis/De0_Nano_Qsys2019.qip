@@ -2,7 +2,7 @@ set_global_assignment -entity "De0_Nano_Qsys2019" -library "De0_Nano_Qsys2019" -
 set_global_assignment -entity "De0_Nano_Qsys2019" -library "De0_Nano_Qsys2019" -name IP_TOOL_VERSION "13.0sp1"
 set_global_assignment -entity "De0_Nano_Qsys2019" -library "De0_Nano_Qsys2019" -name IP_TOOL_ENV "Qsys"
 set_global_assignment -library "De0_Nano_Qsys2019" -name SOPCINFO_FILE [file join $::quartus(qip_path) "../../De0_Nano_Qsys2019.sopcinfo"]
-set_instance_assignment -entity "De0_Nano_Qsys2019" -library "De0_Nano_Qsys2019" -name SLD_INFO "QSYS_NAME De0_Nano_Qsys2019 HAS_SOPCINFO 1 GENERATION_ID 1575783191"
+set_instance_assignment -entity "De0_Nano_Qsys2019" -library "De0_Nano_Qsys2019" -name SLD_INFO "QSYS_NAME De0_Nano_Qsys2019 HAS_SOPCINFO 1 GENERATION_ID 1577004102"
 set_global_assignment -library "De0_Nano_Qsys2019" -name MISC_FILE [file join $::quartus(qip_path) "../../De0_Nano_Qsys2019.cmp"]
 set_global_assignment -name SYNTHESIS_ONLY_QIP ON
 set_global_assignment -library "De0_Nano_Qsys2019" -name MISC_FILE [file join $::quartus(qip_path) "../../De0_Nano_Qsys2019.qsys"]
@@ -36,6 +36,7 @@ set_global_assignment -library "De0_Nano_Qsys2019" -name SYSTEMVERILOG_FILE [fil
 set_global_assignment -library "De0_Nano_Qsys2019" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_master_agent.sv"]
 set_global_assignment -library "De0_Nano_Qsys2019" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_slave_translator.sv"]
 set_global_assignment -library "De0_Nano_Qsys2019" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_master_translator.sv"]
+set_global_assignment -library "De0_Nano_Qsys2019" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/De0_Nano_Qsys2019_pio_command.v"]
 set_global_assignment -library "De0_Nano_Qsys2019" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/De0_Nano_Qsys2019_pio_data.v"]
 set_global_assignment -library "De0_Nano_Qsys2019" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/De0_Nano_Qsys2019_uart_0.v"]
 set_global_assignment -library "De0_Nano_Qsys2019" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/De0_Nano_Qsys2019_sdram.v"]
@@ -126,6 +127,9 @@ set_global_assignment -entity "altera_merlin_slave_translator" -library "De0_Nan
 set_global_assignment -entity "altera_merlin_master_translator" -library "De0_Nano_Qsys2019" -name IP_TOOL_NAME "altera_merlin_master_translator"
 set_global_assignment -entity "altera_merlin_master_translator" -library "De0_Nano_Qsys2019" -name IP_TOOL_VERSION "13.0"
 set_global_assignment -entity "altera_merlin_master_translator" -library "De0_Nano_Qsys2019" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "De0_Nano_Qsys2019_pio_command" -library "De0_Nano_Qsys2019" -name IP_TOOL_NAME "altera_avalon_pio"
+set_global_assignment -entity "De0_Nano_Qsys2019_pio_command" -library "De0_Nano_Qsys2019" -name IP_TOOL_VERSION "13.0.1.99.2"
+set_global_assignment -entity "De0_Nano_Qsys2019_pio_command" -library "De0_Nano_Qsys2019" -name IP_TOOL_ENV "Qsys"
 set_global_assignment -entity "De0_Nano_Qsys2019_pio_data" -library "De0_Nano_Qsys2019" -name IP_TOOL_NAME "altera_avalon_pio"
 set_global_assignment -entity "De0_Nano_Qsys2019_pio_data" -library "De0_Nano_Qsys2019" -name IP_TOOL_VERSION "13.0.1.99.2"
 set_global_assignment -entity "De0_Nano_Qsys2019_pio_data" -library "De0_Nano_Qsys2019" -name IP_TOOL_ENV "Qsys"

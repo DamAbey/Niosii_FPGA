@@ -92,6 +92,38 @@
          type = "int";
       }
    }
+   element sdram.s1
+   {
+      datum baseAddress
+      {
+         value = "33554432";
+         type = "String";
+      }
+   }
+   element uart_0.s1
+   {
+      datum baseAddress
+      {
+         value = "67178496";
+         type = "String";
+      }
+   }
+   element onchip_memory2.s1
+   {
+      datum baseAddress
+      {
+         value = "67141632";
+         type = "String";
+      }
+   }
+   element pio_data.s1
+   {
+      datum baseAddress
+      {
+         value = "67178544";
+         type = "String";
+      }
+   }
    element pio_led.s1
    {
       datum baseAddress
@@ -105,38 +137,6 @@
       datum baseAddress
       {
          value = "67178528";
-         type = "String";
-      }
-   }
-   element onchip_memory2.s1
-   {
-      datum baseAddress
-      {
-         value = "67141632";
-         type = "String";
-      }
-   }
-   element uart_0.s1
-   {
-      datum baseAddress
-      {
-         value = "67178496";
-         type = "String";
-      }
-   }
-   element sdram.s1
-   {
-      datum baseAddress
-      {
-         value = "33554432";
-         type = "String";
-      }
-   }
-   element pio_data.s1
-   {
-      datum baseAddress
-      {
-         value = "67178544";
          type = "String";
       }
    }
@@ -179,7 +179,7 @@
  <parameter name="projectName" value="First_Niosii.qpf" />
  <parameter name="sopcBorderPoints" value="false" />
  <parameter name="systemHash" value="1" />
- <parameter name="timeStamp" value="1575783143657" />
+ <parameter name="timeStamp" value="1577004075954" />
  <parameter name="useTestBenchNamingPattern" value="false" />
  <instanceScript></instanceScript>
  <interface name="clk" internal="clk_50.clk_in" type="clock" dir="end" />
@@ -482,7 +482,7 @@
   <parameter name="resetValue" value="0" />
   <parameter name="simDoTestBenchWiring" value="false" />
   <parameter name="simDrivenValue" value="0" />
-  <parameter name="width" value="8" />
+  <parameter name="width" value="16" />
   <parameter name="clockRate" value="50000000" />
  </module>
  <connection

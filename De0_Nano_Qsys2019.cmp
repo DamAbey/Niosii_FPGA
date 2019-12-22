@@ -16,7 +16,7 @@
 			uart_txd                               : out   std_logic;                                        -- txd
 			pio_data_external_connection_in_port   : in    std_logic_vector(15 downto 0) := (others => 'X'); -- in_port
 			pio_data_external_connection_out_port  : out   std_logic_vector(15 downto 0);                    -- out_port
-			pio_command_external_connection_export : out   std_logic_vector(7 downto 0)                      -- export
+			pio_command_external_connection_export : out   std_logic_vector(15 downto 0)                     -- export
 		);
 	end component De0_Nano_Qsys2019;
 

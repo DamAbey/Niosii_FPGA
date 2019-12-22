@@ -396,8 +396,8 @@ applicable agreement for further details.
 	(port
 		(pt 0 472)
 		(output)
-		(text "pio_command_external_connection_export[7..0]" (rect 0 0 272 14)(font "Arial" (font_size 8)))
-		(text "pio_command_external_connection_export[7..0]" (rect 4 461 276 475)(font "Arial" (font_size 8)))
+		(text "pio_command_external_connection_export[15..0]" (rect 0 0 279 14)(font "Arial" (font_size 8)))
+		(text "pio_command_external_connection_export[15..0]" (rect 4 461 283 475)(font "Arial" (font_size 8)))
 		(line (pt 0 472)(pt 256 472)(line_width 3))
 	)
 	(port
@@ -458,8 +458,8 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 448 832 672 912)
-	(text "date_day" (rect 5 0 51 12)(font "Arial" ))
+	(rect 448 832 680 912)
+	(text "edge_detect" (rect 5 0 65 12)(font "Arial" ))
 	(text "inst2" (rect 8 64 31 76)(font "Arial" ))
 	(port
 		(pt 0 32)
@@ -471,19 +471,19 @@ applicable agreement for further details.
 	(port
 		(pt 0 48)
 		(input)
-		(text "Command[7..0]" (rect 0 0 76 12)(font "Arial" ))
-		(text "Command[7..0]" (rect 21 43 97 55)(font "Arial" ))
+		(text "Command[15..0]" (rect 0 0 82 12)(font "Arial" ))
+		(text "Command[15..0]" (rect 21 43 103 55)(font "Arial" ))
 		(line (pt 0 48)(pt 16 48)(line_width 3))
 	)
 	(port
-		(pt 224 32)
+		(pt 232 32)
 		(output)
 		(text "Data_out[15..0]" (rect 0 0 76 12)(font "Arial" ))
-		(text "Data_out[15..0]" (rect 139 27 203 39)(font "Arial" ))
-		(line (pt 224 32)(pt 208 32)(line_width 3))
+		(text "Data_out[15..0]" (rect 147 27 211 39)(font "Arial" ))
+		(line (pt 232 32)(pt 216 32)(line_width 3))
 	)
 	(drawing
-		(rectangle (rect 16 16 208 64))
+		(rectangle (rect 16 16 216 64))
 	)
 )
 (connector
@@ -640,14 +640,6 @@ applicable agreement for further details.
 	(pt 480 272)
 )
 (connector
-	(pt 480 272)
-	(pt 800 272)
-)
-(connector
-	(pt 800 272)
-	(pt 808 272)
-)
-(connector
 	(pt 800 408)
 	(pt 328 408)
 	(bus)
@@ -698,16 +690,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 672 864)
-	(pt 672 616)
-	(bus)
-)
-(connector
-	(pt 672 616)
-	(pt 800 616)
-	(bus)
-)
-(connector
 	(pt 448 880)
 	(pt 408 880)
 	(bus)
@@ -730,6 +712,29 @@ applicable agreement for further details.
 (connector
 	(pt 768 672)
 	(pt 800 672)
+	(bus)
+)
+(connector
+	(pt 480 272)
+	(pt 800 272)
+)
+(connector
+	(pt 800 272)
+	(pt 808 272)
+)
+(connector
+	(pt 712 616)
+	(pt 712 864)
+	(bus)
+)
+(connector
+	(pt 800 616)
+	(pt 712 616)
+	(bus)
+)
+(connector
+	(pt 712 864)
+	(pt 680 864)
 	(bus)
 )
 (junction (pt 480 232))

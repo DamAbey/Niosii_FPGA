@@ -2,8 +2,8 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>hal</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>Dec 16, 2019 7:20:33 PM</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1576484433554</BspGeneratedUnixTimeStamp>
+        <BspGeneratedTimeStamp>Dec 22, 2019 8:09:24 PM</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1577005764741</BspGeneratedUnixTimeStamp>
         <BspGeneratedLocation>C:\Users\damit\Desktop\FPGA_Deo_Nano\DE0-Nano_v.1.2.2_SystemCD\Demonstration\Niosii_FPGA\software\NIOSII_bsp</BspGeneratedLocation>
         <BspSettingsFile>.\settings.bsp</BspSettingsFile>
         <SopcDesignFile>C:\Users\damit\Desktop\FPGA_Deo_Nano\DE0-Nano_v.1.2.2_SystemCD\Demonstration\Niosii_FPGA\De0_Nano_Qsys2019.sopcinfo</SopcDesignFile>

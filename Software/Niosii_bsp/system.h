@@ -4,7 +4,7 @@
  * Machine generated for CPU 'cpu' in SOPC Builder design 'De0_Nano_Qsys2019'
  * SOPC Builder design path: C:/Users/damit/Desktop/FPGA_Deo_Nano/DE0-Nano_v.1.2.2_SystemCD/Demonstration/Niosii_FPGA/De0_Nano_Qsys2019.sopcinfo
  *
- * Generated: Mon Dec 16 19:20:35 EST 2019
+ * Generated: Sun Dec 22 20:09:26 EST 2019
  */
 
 /*
@@ -239,7 +239,7 @@
 #define PIO_COMMAND_BIT_CLEARING_EDGE_REGISTER 0
 #define PIO_COMMAND_BIT_MODIFYING_OUTPUT_REGISTER 0
 #define PIO_COMMAND_CAPTURE 0
-#define PIO_COMMAND_DATA_WIDTH 8
+#define PIO_COMMAND_DATA_WIDTH 16
 #define PIO_COMMAND_DO_TEST_BENCH_WIRING 0
 #define PIO_COMMAND_DRIVEN_SIM_VALUE 0
 #define PIO_COMMAND_EDGE_TYPE "NONE"
@@ -361,7 +361,7 @@
 #define SYSID_IRQ_INTERRUPT_CONTROLLER_ID -1
 #define SYSID_NAME "/dev/sysid"
 #define SYSID_SPAN 8
-#define SYSID_TIMESTAMP 1576484173
+#define SYSID_TIMESTAMP 1577005592
 #define SYSID_TYPE "altera_avalon_sysid_qsys"
 
 

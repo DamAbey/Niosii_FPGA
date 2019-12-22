@@ -108,5 +108,5 @@ set_location_assignment PIN_B3 -to uart_tx
 set_global_assignment -name QSYS_FILE De0_Nano_Qsys2019.qsys
 set_global_assignment -name VERILOG_FILE De0_Nano_Qsys2019/synthesis/De0_Nano_Qsys2019.v
 set_global_assignment -name BDF_FILE First_Niosii.bdf
-set_global_assignment -name VERILOG_FILE date_day.v
+set_global_assignment -name VERILOG_FILE edge_detect.v
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
